@@ -12,7 +12,6 @@ body {
 	height: 2000px;
 	font-family: 'Roboto Mono', monospace;
 	width: 100%;
-	overflow: hidden;
 }
 
 header {
@@ -27,6 +26,18 @@ header {
 -o-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
 box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
 filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=180, Strength=5);
+animation-name: slidemove;
+animation-iteration-count: 1;
+animation-timing-function: ease-out;
+animation-duration: 0.8s;
+}
+@keyframes slidemove {
+	0% {
+			transform: translateX(-800px);
+	}
+	100% {
+			transform: translateX(0);
+	}
 }
 
  header #active_menu a{
@@ -123,7 +134,6 @@ header > a {
 .menu .content {
 	margin-left: auto;
 	margin-right: auto;
-	width: auto;
 	text-align: center;
 	font-family: 'Roboto Mono', monospace;
 
@@ -289,41 +299,4 @@ margin-left: -342px;
 }
 #slideleft:target {
 margin-left: 0px;
-}
-
-
-
-
-
-
-
-.page  {
-	position: absolute;
-	display: inline-block;
-	height: inherit;
-	width: 100%;
-	margin-top: 20px;
-	/*border: 3px solid red;*/
-	text-align: center;
-	overflow-y: auto;
-}
-.page .animation , .page .transition {
-	display: inline-block;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 200px;
-}
-.page .animation {
-	background-color: #DC3238;
-}
-.page .transition {
-	background-color: #41C057;
-}
-	@-webkit-keyframes show {
-    0% {
-        -webkit-transform: ;
-    }
-    100% {
-        -webkit-transform: ;
-    }
 }
