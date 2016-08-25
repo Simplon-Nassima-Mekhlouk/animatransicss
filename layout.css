@@ -1,5 +1,5 @@
 /* modification for prism.css */
-code[class*="language-"], pre[class*="language-"] { 
+code[class*="language-"], pre[class*="language-"] {
   tab-size: 0;
 }
 /* end modification prism.css */
@@ -314,11 +314,9 @@ margin-left: 0px;
 	padding: 200px;
 }
 .page .animation {
-	border: 5px solid black;
 	background-color: #DC3238;
 }
 .page .transition {
-	border: 5px solid black;
 	background-color: #41C057;
 }
 	@-webkit-keyframes show {

@@ -4,7 +4,7 @@
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Lato" rel="stylesheet">
 	<link rel="icon" class="fa fa-css3" aria-hidden="true" />
-	<?php 
+	<?php
 	// Si la variable $fichier_css existe
 	// Nous mettons une balise avec le fichier css
 		if (isset($fichier_css)) {
@@ -15,6 +15,10 @@
 		} else {
 			echo '<link rel="stylesheet" type="text/css" href="layout.css">';
 			echo '<link rel="stylesheet" type="text/css" href="lib/prism.css">';
+		}
+
+		if (isset($index)) {
+			echo '<link rel="stylesheet" type="text/css" href="style.css">';
 		}
  	?>
 </head>
@@ -76,4 +80,3 @@
 		<a href="#" class="leftbarmenuclose">
 			<h6>Fermer</h6>
 		</a>
-		

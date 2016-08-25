@@ -1,6 +1,6 @@
 <?php 
-include 'head.php'; 
 $index = true;
+include 'head.php';
 ?>
 	<div class="page">
 
