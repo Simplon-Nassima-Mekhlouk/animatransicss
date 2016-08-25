@@ -9,7 +9,6 @@ body {
 	margin: 0;
 	padding: 0;
 	position: relative;
-	height: 2000px;
 	font-family: 'Roboto Mono', monospace;
 	width: 100%;
 }
@@ -18,18 +17,18 @@ header {
 	width: 100%;
 	padding: 15px;
 	position: fixed;
-	background: rgba(66, 133, 244, 0.88);
+	background: #EA4335;
 	top: 0;
 	z-index: 5;
 	-moz-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
--webkit-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
--o-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
-filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=180, Strength=5);
-animation-name: slidemove;
-animation-iteration-count: 1;
-animation-timing-function: ease-out;
-animation-duration: 0.8s;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
+  -o-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
+  box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
+  filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=180, Strength=5);
+  animation-name: slidemove;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-duration: 0.8s;
 }
 @keyframes slidemove {
 	0% {

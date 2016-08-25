@@ -43,7 +43,7 @@
 	<div class="sidebar"  id="slideleft">
 		<div class="leftbar">
 			<ul>
-				<a href="#">
+				<a href="http://localhost/animtransicss/">
 					<li class="green">
 						<i class="fa fa-home fa-2x" aria-hidden="true"></i>
 						<h3>Home</h3>
