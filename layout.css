@@ -17,7 +17,7 @@ header {
 	width: 100%;
 	padding: 15px;
 	position: fixed;
-	background: #EA4335;
+	background: purple;
 	top: 0;
 	z-index: 5;
 	-moz-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
@@ -191,6 +191,11 @@ header > a {
 	background-color: rgb(233, 20, 30);
 	margin-left: -10px;
 	z-index: -2;
+  -moz-box-shadow: 10px 0px 8px -8px rgba(77, 77, 77, 0.5);
+	-webkit-box-shadow: 10px 0px 8px -8px rgba(77, 77, 77, 0.5);
+	-o-box-shadow: 10px 0px 8px -8px rgba(77, 77, 77, 0.5);
+	box-shadow: 10px 0px 8px -8px rgba(77, 77, 77, 0.5);
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=90, Strength=5);
 
 }
 .leftbarmenuclose h6 {
