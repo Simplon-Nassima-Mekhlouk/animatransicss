@@ -18,7 +18,12 @@
 		}
 
 		if (isset($index)) {
-			echo '<link rel="stylesheet" type="text/css" href="style.css">';
+			echo '<link rel="stylesheet" type="text/css" href="style.css">
+						<style>
+						.sidebar {
+							margin-top: 79px;
+						}
+						</style>';
 		}
  	?>
 </head>
