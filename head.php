@@ -9,22 +9,17 @@
 	// Si la variable $fichier_css existe
 	// Nous mettons une balise avec le fichier css
 		if (isset($fichier_css)) {
-			echo '<link rel="stylesheet" type="text/css" href="../lib/prism.css">';
-			echo '<link rel="stylesheet" type="text/css" href="../layout.css">';
 			echo $css = '<link rel="stylesheet" type="text/css" href="'. $fichier_css .'">';
+			echo '<link rel="stylesheet" type="text/css" href="../layout.css">';
+			echo '<link rel="stylesheet" type="text/css" href="../lib/prism.css">';
 
 		} else {
-			echo '<link rel="stylesheet" type="text/css" href="lib/prism.css">';
 			echo '<link rel="stylesheet" type="text/css" href="layout.css">';
+			echo '<link rel="stylesheet" type="text/css" href="lib/prism.css">';
 		}
 
 		if (isset($index)) {
-			echo '<link rel="stylesheet" type="text/css" href="style.css">
-						<style>
-						.sidebar {
-							margin-top: 79px;
-						}
-						</style>';
+			echo '<link rel="stylesheet" type="text/css" href="style.css">';
 		}
  	?>
 </head>
@@ -69,7 +64,7 @@
 						<h3>Atelier</h3>
 					</li>
 				</a>
-				<a href="annexe/">
+				<a href="lexique/index.php">
 					<li class="black">
 						<i class="fa fa-book fa-2x" aria-hidden="true"></i>
 						<h3>Lexique</h3>
