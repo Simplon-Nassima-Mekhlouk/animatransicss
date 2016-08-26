@@ -175,10 +175,9 @@ header > a {
 
 .sidebar {
 	position: fixed;
-	width: 100%;
+	width: 340px;
 	height: 100%;
 	transition: all 0.2s ease-in-out;
-	z-index: 0;
 }
 .leftbar, .leftbarmenuclose {
 	display: inline-block;
