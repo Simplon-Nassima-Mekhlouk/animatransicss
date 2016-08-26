@@ -19,5 +19,17 @@ include 'head.php';
 
 	</div> <!-- END PAGE -->
 </div> <!-- END SIDEBAR -->
+<div class="ball1" id="ball100">
+</div>
+<div class="ball1" id="ball101">
+</div>
+<div class="ball1" id="ball103">
+</div>
+<div class="ball2" id="ball200">
+</div>
+<div class="ball2" id="ball201">
+</div>
+<!--<div class="ball2" id="ball202">
+</div>-->
 
 <?php include 'footer.php'; ?>

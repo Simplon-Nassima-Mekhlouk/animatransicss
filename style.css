@@ -1,10 +1,16 @@
-
+body {
+ background-color: transparent;
+ overflow: hidden;
+}
+.sidebar {
+	width: 100%;
+}
 .page  {
 	position: absolute;
 	display: inline-block;
 	height: inherit;
 	width: 100%;
-	margin-top: 80px;
+	margin-top: 120px;
 	text-align: center;
 	height: 100%;
 }
@@ -14,6 +20,11 @@
 	margin-left: auto;
 	margin-right: auto;
 	padding: 150px;
+  -moz-box-shadow: 5px 5px 20px 0px rgba(77, 77, 77, 0.5);
+  -webkit-box-shadow: 5px 5px 20px 0px rgba(77, 77, 77, 0.5);
+  -o-box-shadow: 5px 5px 20px 0px rgba(77, 77, 77, 0.5);
+  box-shadow: 5px 5px 20px 0px rgba(77, 77, 77, 0.5);
+  filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=134, Strength=5);
 }
 .page .animation {
 	background-color: #E1141B;
@@ -52,10 +63,6 @@
 	0 5px 5px 0 rgba(0,0,0,.24);
 	color: #00F076;
 	z-index: 2;
-	animation: rotatey;
-	animation-iteration-count: 1;
-  animation-timing-function: ease-out;
-  animation-duration: 0.8s;
 	position: relative;
 	transition: all 0.2s ease-in-out;
 }
@@ -114,17 +121,207 @@ color: #E1141B;
 				transform: translateY(0px);
 		}
 	}
-	@keyframes rotatey {
-	0% {
-		transform:rotate(0deg);
-	}
-	25% {
-		transform:rotate(3deg);
-	}
-	50% {
-		transform:rotate(-3deg);
-	}
-	100% {
-		transform:rotate(0deg);
-	}
-	}
+	.ball1 {
+		width: 20px;
+		height: 20px;
+		top: 50%;
+		left: 50%;
+		border-radius: 20px;
+    animation-delay: 2050ms;
+    -moz-box-shadow: 5px 5px 20px 0px rgba(77, 77, 77, 0.5);
+    -webkit-box-shadow: 5px 5px 20px 0px rgba(77, 77, 77, 0.5);
+    -o-box-shadow: 5px 5px 20px 0px rgba(77, 77, 77, 0.5);
+    box-shadow: 5px 5px 20px 0px rgba(77, 77, 77, 0.5);
+}
+ #ball100 {
+   background-color: purple;
+   position: relative;
+   animation-name: moveball11;
+   animation-fill-mode: forwards;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+   z-index: -102;
+ }
+ #ball101 {
+   animation-name: moveball12;
+   background-color: #5A7785;
+   position: relative;
+   animation-duration: 16000ms;
+   animation-fill-mode: forwards;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+   z-index: -102;
+ }
+ #ball103 {
+   position: relative;
+   background-color: #ED445A;
+   animation-name: moveball13;
+   animation-duration: 17000ms;
+   animation-delay: 0ms;
+   animation-fill-mode: forwards;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+   transform-origin: 0 0;
+   z-index: -102;
+
+ }
+@keyframes moveball11 {
+  0%
+  {
+    transform:translate(0px, 0px);
+  }
+  20%
+   {
+    transform:translate(359px, -320px);
+  }
+  40%
+   {
+    transform:translate(750px, 144px);
+  }
+  60%
+   {
+    transform:translate(359px, 401px);
+  }
+  80%
+   {
+    transform:translate(-765px, 286px);
+  }
+  100%
+   {
+    transform:translate(0px, 0px);
+  }
+}
+
+@keyframes moveball12 {
+  0%
+  {
+    transform:translate(0px, 0px);
+  }
+  14.29%
+  {
+    transform:translate(-396px, -304px);
+  }
+  28.57%
+  {
+    transform:translate(-775px, -82px);
+  }
+  42.86%
+  {
+    transform:translate(-442px, 385px);
+  }
+  57.14%
+  {
+    transform:translate(401px, -306px);
+  }
+  71.43%
+  {
+    transform:translate(760px, 22px);
+  }
+  85.71%
+  {
+    transform:translate(597px, 380px);
+  }
+  100%
+  {
+    transform:translate(1px, -2px);
+  }
+}
+
+@keyframes moveball13 {
+  0%
+  {
+    transform:translate(0px, 0px);
+  }
+  14.29%
+  {
+    transform:translate(388px, 381px);
+  }
+  28.57%
+  {
+    transform:translate(747px, 252px);
+  }
+  42.86%
+  {
+    transform:translate(615px, -320px);
+  }
+  57.14%
+  {
+    transform:translate(-61px, 381px);
+  }
+  71.43%
+  {
+    transform:translate(-775px, 229px);
+  }
+  85.71%
+  {
+    transform:translate(-193px, -320px);
+  }
+  100%
+  {
+    transform:translate(-3px, -1px);
+  }
+}
+
+.ball2 {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  border-radius: 800px;
+  z-index: -101;
+  overflow: hidden;
+  position: absolute;
+  animation-name: move2;
+  animation-duration: 3000ms;
+  animation-delay: 0ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transition: all 0.6 ease-in-out;
+  display: inline-block;
+
+
+}
+
+@keyframes move2 {
+  0% {
+       transform: translate3d(150px, 140px, 0px) scale(1);
+       animation-timing-function: ease-in;
+
+   }
+   50% {
+       transform: translate3d(140px, 150px, 0px) scale(2);
+       animation-timing-function: ease-out;
+   }
+   100% {
+       transform: translate3d(150px, 140px, 0px) scale(1);
+
+}
+}
+
+ #ball200 {
+  left: -151px;
+  top: -359px;
+  position: absolute;
+  background-color: #34A853;
+  animation-duration: 10s;
+  -moz-box-shadow: 5px 5px 20px 0px rgb(77, 77, 77);
+  -webkit-box-shadow: 5px 5px 20px 0px rgb(77, 77, 77);
+  -o-box-shadow: 5px 5px 20px 0px rgb(77, 77, 77);
+  box-shadow: 5px 5px 20px 0px rgb(77, 77, 77, 0.5);
+  filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=134, Strength=5);
+}
+  #ball201 {
+  left: 747px;
+  bottom: -80px;
+  background-color: rgb(255, 204, 1);
+  animation-duration: 15000ms;
+  -moz-box-shadow: -5px -5px 20px 0px rgba(77, 77, 77, 0.5);
+  -webkit-box-shadow: -5px -5px 20px 0px rgba(77, 77, 77, 0.5);
+  -o-box-shadow: -5px -5px 20px 0px rgba(77, 77, 77, 0.5);
+  box-shadow: -5px -5px 20px 0px rgba(77, 77, 77, 0.5);
+  filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=134, Strength=5);
+}
+/*#ball201 {
+  left: 10%;
+  bottom: 60%;
+  background-color: red;
+}*/
