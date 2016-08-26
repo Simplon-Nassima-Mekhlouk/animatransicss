@@ -41,6 +41,7 @@ include'../head.php';
 				transition-delay: unset;</code>
 				</pre>
 			</div>
+			<a href="https://developer.mozilla.org/fr/docs/Web/CSS/transition-delay" class="source" target="_blank">Source <i class="fa fa-link fa-1x" aria-hidden="true"></i></a>
 		</div>
 	</section>
 
@@ -66,6 +67,7 @@ include'../head.php';
 					transition-duration: unset;</code>
 				</pre>
 			</div>
+			<a href="https://developer.mozilla.org/fr/docs/Web/CSS/transition-duration" class="source" target="_blank">Source <i class="fa fa-link fa-1x" aria-hidden="true"></i></a>
 		</div>
 	</section>
 
@@ -78,12 +80,6 @@ include'../head.php';
 			<p>
 				Si vous définissez une propriété raccourcie (par exemple background), toutes les propriétés détaillées correspondantes seront animées de la même façon.
 			</p>
-			<div class="bloc">
-				<h2>Valeur initiale</h2>
-				<pre class="line-numbers language-css">
-					<code>all</code>
-				</pre>
-			</div>
 			<div class="bloc">
 				<h2>Syntaxe</h2>
 				<pre class="line-numbers language-css">
@@ -105,6 +101,7 @@ include'../head.php';
 					transition-property: unset;</code>
 				</pre>
 			</div>
+			<a href="https://developer.mozilla.org/fr/docs/Web/CSS/transition-property" class="source" target="_blank">Source <i class="fa fa-link fa-1x" aria-hidden="true"></i></a>
 		</div>
 	</section>
 
@@ -121,12 +118,6 @@ include'../head.php';
 			<p>
 				Il est possible de définir plusieurs fonctions de temporisation ; chacune sera appliquée à la propriété correspondante listée avec la propriété transition-property, qui agit comme liste maîtresse. S'il y a moins de fonctions définies que d'éléments dans la liste, les valeurs manquantes sont remplacées par la valeur par défaut (<span class="code">ease</span>). S'il y a trop de fonctions de temporisation, la liste est simplement tronquée à la bonne dimension. Dans les deux cas, la déclaration CSS reste valide.
 			</p>
-			<div class="bloc">
-				<h2>Valeur initial</h2>
-				<pre class="line-numbers language-css">
-					<code>ease</code>
-				</pre>
-			</div>
 			<div class="bloc">
 				<h2>Syntaxe</h2>
 				<pre class="line-numbers language-css">
@@ -152,6 +143,7 @@ include'../head.php';
 					transition-timing-function: unset;</code>
 				</pre>
 			</div>
+			<a href="https://developer.mozilla.org/fr/docs/Web/CSS/transition-timing-function" class="source" target="_blank">Source <i class="fa fa-link fa-1x" aria-hidden="true"></i></a>
 		</div>
 	</section>
 
@@ -198,6 +190,7 @@ include'../head.php';
 				transition: unset;</code>
 				</pre>
 			</div>
+			<a href="https://developer.mozilla.org/fr/docs/Web/CSS/transition" class="source">Source <i class="fa fa-link fa-1x" aria-hidden="true"></i></a>
 		</div>
 	</section>
 </div>
@@ -208,6 +201,7 @@ include'../head.php';
 		Les animations CSS sont un module CSS qui définit la façon dont les valeurs des propriétés CSS peuvent être animées au fur et à mesure d'une période via des étapes intermédiaires (keyframes en anglais). Le comportement de ces animations séquencées peut être défini en termes de durée, de nombre de répétitions et de la façon dont elles sont répétées.
 	</p>
 	<h3>Propriétés CSS:</h3>
+
 	<section data-toggle="false">
 		<h3 id="test" onclick="toggle(this)">animation-delay<i class="fa fa-1x fa-chevron-right" aria-hidden="true"></i></h3>
 		<div class="contenu">
@@ -230,6 +224,155 @@ include'../head.php';
 				animation-delay: 2s, 4ms;</code>
 				</pre>
 			</div>
+			<a href="https://developer.mozilla.org/fr/docs/Web/CSS/animation-delay" class="source">Source <i class="fa fa-link fa-1x" aria-hidden="true"></i></a>
+		</div>
+	</section>
+
+	<section data-toggle="false">
+		<h3 id="test" onclick="toggle(this)">animation-direction<i class="fa fa-1x fa-chevron-right" aria-hidden="true"></i></h3>
+		<div class="contenu">
+			<p>
+				La propriété animation-direction indique si les cycles de l'animation doivent être joués dans le sens inverse et/ou de façon alternée.
+			</p>
+			<div class="bloc">
+				<h2>Syntaxe</h2>
+				<pre class="line-numbers language-css">
+				<code>/* Valeurs avec un mot-clé */
+				animation-direction: normal;
+				animation-direction: reverse;
+				animation-direction: alternate;
+				animation-direction: alternate-reverse;
+
+				/* Gestion de plusieurs animations */
+				animation-direction: normal, reverse;
+				animation-direction: alternate, reverse, normal;
+
+				/* Valeurs globales */
+				animation-direction: inherit;
+				animation-direction: initial;
+				animation-direction: unset;</code>
+				</pre>
+			</div>
+			<a href="https://developer.mozilla.org/fr/docs/Web/CSS/animation-direction" class="source">Source <i class="fa fa-link fa-1x" aria-hidden="true"></i></a>
+		</div>
+	</section>
+
+	<section data-toggle="false">
+		<h3 id="test" onclick="toggle(this)">animation-duration<i class="fa fa-1x fa-chevron-right" aria-hidden="true"></i></h3>
+		<div class="contenu">
+			<p>
+				La propriété animation-duration définit la durée d'une animation pour parcourir un cycle.
+			</p>
+			<p>
+				La valeur par défaut est 0s, ce qui indique qu'aucune animation ne doit avoir lieu.
+			</p>
+			<div class="bloc">
+				<h2>Syntaxe</h2>
+				<pre class="line-numbers language-css">
+				<code>animation-duration: 6s;
+				animation-duration: 120ms;
+				animation-duration: 1s, 15s;
+				animation-duration: 10s, 30s, 230ms;</code>
+				</pre>
+			</div>
+			<a href="https://developer.mozilla.org/fr/docs/Web/CSS/animation-direction" class="source">Source <i class="fa fa-link fa-1x" aria-hidden="true"></i></a>
+		</div>
+	</section>
+
+	<section data-toggle="false">
+		<h3 id="test" onclick="toggle(this)">animation-fill-mode<i class="fa fa-1x fa-chevron-right" aria-hidden="true"></i></h3>
+		<div class="contenu">
+			<p>
+				La propriété animation-fill-mode indique la façon dont une animation CSS doit appliquer les styles à sa cible avant et après son exécution.
+			</p>
+			<div class="bloc">
+				<h2>Syntaxe</h2>
+				<pre class="line-numbers language-css">
+				<code>/* Valeurs avec un mot-clé */
+				animation-fill-mode: none;
+				animation-fill-mode: forwards;
+				animation-fill-mode: backwards;
+				animation-fill-mode: both;
+
+				/* Gestion de plusieurs animations */
+				animation-fill-mode: none, backwards;
+				animation-fill-mode: both, forwards, none;</code>
+				</pre>
+			</div>
+			<h2>Valeurs</h2>
+			<dl>
+			 <dt><code>none</code></dt>
+			 <dd>L'animation n'appliquera aucun style à la cible, avant et après l'exécution.</dd>
+			 <dt><code>forwards</code></dt>
+			 <dd>La cible retiendra les valeurs calculées définies lors de la dernière étape (<em>keyframe</em>). La dernière étape considérée dépend de la valeur de <a href="/fr/docs/Web/CSS/animation-direction"><code>animation-direction</code></a> et de <a href="/fr/docs/Web/CSS/animation-iteration-count"><code>animation-iteration-count</code></a> :
+			 <table class="standard-table">
+			  <thead>
+			   <tr>
+			    <th scope="col"><code>animation-direction</code></th>
+			    <th scope="col"><code>animation-iteration-count</code></th>
+			    <th scope="col">dernière <em>keyframe</em></th>
+			   </tr>
+			  </thead>
+			  <tbody>
+			   <tr>
+			    <td><code>normal</code></td>
+			    <td>pair ou impair</td>
+			    <td><code>100%</code> ou <code>to</code></td>
+			   </tr>
+			   <tr>
+			    <td><code>reverse</code></td>
+			    <td>pair ou impair</td>
+			    <td><code>0%</code> ou <code>from</code></td>
+			   </tr>
+			   <tr>
+			    <td><code>alternate</code></td>
+			    <td>pair</td>
+			    <td><code>0%</code> ou <code>from</code></td>
+			   </tr>
+			   <tr>
+			    <td><code>alternate</code></td>
+			    <td>impair</td>
+			    <td><code>100%</code> ou <code>to</code></td>
+			   </tr>
+			   <tr>
+			    <td><code>alternate-reverse</code></td>
+			    <td>pair</td>
+			    <td><code>100%</code> ou <code>to</code></td>
+			   </tr>
+			   <tr>
+			    <td><code>alternate-reverse</code></td>
+			    <td>impair</td>
+			    <td><code>0%</code> ou <code>from</code></td>
+			   </tr>
+			  </tbody>
+			 </table>
+			 </dd>
+			 <dt><code>backwards</code></dt>
+			 <dd>L'animation appliquera les valeur définies par la première <em>keyframe</em> pertinente et les retiendra pendant la durée indiquée par <a href="/fr/docs/Web/CSS/animation-delay"><code>animation-delay</code></a>. La première <em>keyframe</em> pertinente dépend de la valeur de <a href="/fr/docs/Web/CSS/animation-direction"><code>animation-direction</code></a> :
+			 <table class="standard-table">
+			  <thead>
+			   <tr>
+			    <th scope="col"><code>animation-direction</code></th>
+			    <th scope="col">première <em>keyframe</em></th>
+			   </tr>
+			  </thead>
+			  <tbody>
+			   <tr>
+			    <td><code>normal</code> ou <code>alternate</code></td>
+			    <td><code>0%</code> ou <code>from</code></td>
+			   </tr>
+			   <tr>
+			    <td><code>reverse</code> ou <code>alternate-reverse</code></td>
+			    <td><code>100%</code> ou <code>to</code></td>
+			   </tr>
+			  </tbody>
+			 </table>
+			 </dd>
+			 <dt><code>both</code></dt>
+			 <dd>L'animation respectera les règles qui s'appliquent à <code>forwards</code> et <code>backwards</code>, entraînant ainsi l'extension des propriétés de l'animation dans les deux directions.</dd>
+			</dl>
+
+			<a href="https://developer.mozilla.org/fr/docs/Web/CSS/animation-direction" class="source">Source <i class="fa fa-link fa-1x" aria-hidden="true"></i></a>
 		</div>
 	</section>
 </div>
