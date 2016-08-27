@@ -1,3 +1,9 @@
+/* modification for prism.css */
+code[class*="language-"], pre[class*="language-"] {
+  tab-size: 1;
+}
+/* end modification for prism.css */
+
 body {
  background-color: transparent;
  overflow: hidden;
