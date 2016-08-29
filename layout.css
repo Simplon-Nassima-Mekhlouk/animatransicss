@@ -7,6 +7,7 @@ code[class*="language-"], pre[class*="language-"] {
 
 body {
 	margin: 0;
+  background-color: #D7EFF7;
 	padding: 0;
 	position: relative;
 	font-family: 'Roboto Mono', monospace;
