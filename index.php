@@ -25,6 +25,10 @@ include 'head.php';
 </div>
 <div class="ball1" id="ball103">
 </div>
+<div class="ball1" id="ball104">
+</div>
+<div class="ball1" id="ball105">
+</div>
 <div class="ball2" id="ball200">
 </div>
 <div class="ball2" id="ball201">

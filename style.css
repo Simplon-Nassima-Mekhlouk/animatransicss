@@ -154,9 +154,9 @@ body {
 
 #ball100 {
     background-color: purple;
-    position: relative;
+    position: absolute;
     animation-duration: 16000ms;
-    animation-name: moveball11;
+    animation-name: moveball101;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
@@ -164,10 +164,9 @@ body {
 }
 
 #ball101 {
-    animation-name: moveball12;
-    background-color: #5A7785;
-    /* greyblue */
-    position: relative;
+    animation-name: moveball102;
+    background-color: #5A7785;/* greyblue */
+    position: absolute;
     animation-duration: 16000ms;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
@@ -176,10 +175,9 @@ body {
 }
 
 #ball103 {
-    position: relative;
-    background-color: #ED445A;
-    /* light red */
-    animation-name: moveball13;
+    position: absolute;
+    background-color: #ED445A; /* light red */
+    animation-name: moveball103;
     animation-duration: 17000ms;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
@@ -187,8 +185,146 @@ body {
     transform-origin: 0 0;
     z-index: -102;
 }
+#ball104 {
+    position: absolute;
+    background-color: #2963FF; /*bleu turquoise*/
+    animation-name: moveball104;
+    animation-duration: 17000ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform-origin: 0 0;
+    z-index: -102;
+}
+#ball105 {
+  position: absolute;
+  animation-name: moveball105;
+  background-color: grey;
+  animation-duration: 17000ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  z-index: -102;
+}
 
-@keyframes moveball11 {
+@keyframes moveball105 {
+  0%
+  {
+    transform:translate(0px, 0px);
+    opacity: 1;
+  }
+  11.11%
+  {
+    transform:translate(-295px, 365px);
+    opacity: 1;
+  }
+  22.22%
+  {
+    transform:translate(-768px, 138px);
+    opacity: 1;
+  }
+  33.33%
+  {
+    transform:translate(-43px, -300px);
+    opacity: 1;
+  }
+  44.44%
+  {
+    transform:translate(-570px, 365px);
+    opacity: 1;
+  }
+  55.56%
+  {
+    transform:translate(146px, -300px);
+    opacity: 1;
+  }
+  66.67%
+  {
+    transform:translate(728px, 285px);
+    opacity: 1;
+  }
+  77.78%
+  {
+    transform:translate(295px, 365px);
+    opacity: 1;
+  }
+  88.89%
+  {
+    transform:translate(197px, -300px);
+    opacity: 1;
+  }
+  100%
+  {
+    transform:translate(1px, -2px);
+    opacity: 1;
+}
+}
+
+@keyframes  moveball104{
+  0%
+  {
+    transform:translate(0px, 0px);
+    opacity: 1;
+  }
+  9.09%
+  {
+    transform:translate(100px, -306px);
+    opacity: 1;
+  }
+  18.18%
+  {
+    transform:translate(189px, 367px);
+    opacity: 1;
+  }
+  27.27%
+  {
+    transform:translate(291px, -306px);
+    opacity: 1;
+  }
+  36.36%
+  {
+    transform:translate(361px, 355px);
+    opacity: 1;
+  }
+  45.45%
+  {
+    transform:translate(480px, -306px);
+    opacity: 1;
+  }
+  54.55%
+  {
+    transform:translate(596px, 355px);
+    opacity: 1;
+  }
+  63.64%
+  {
+    transform:translate(755px, 28px);
+    opacity: 1;
+  }
+  72.73%
+  {
+    transform:translate(-765px, -183px);
+    opacity: 1;
+  }
+  81.82%
+  {
+    transform:translate(-700px, -306px);
+    opacity: 1;
+  }
+  90.91%
+  {
+    transform:translate(-119px, 375px);
+    opacity: 1;
+  }
+  100%
+  {
+    transform:translate(2px, 1px);
+    opacity: 1;
+  }
+}
+
+
+@keyframes moveball101 {
     0% {
         transform: translate(0px, 0px);
         opacity: 1;
@@ -215,7 +351,7 @@ body {
     }
 }
 
-@keyframes moveball12 {
+@keyframes moveball102 {
     0% {
         transform: translate(0px, 0px);
         opacity: 1;
@@ -250,7 +386,7 @@ body {
     }
 }
 
-@keyframes moveball13 {
+@keyframes moveball103 {
     0% {
         transform: translate(0px, 0px);
         opacity: 1;
