@@ -133,7 +133,8 @@ color: #E1141B;
 		top: 50%;
 		left: 50%;
 		border-radius: 20px;
-    animation-delay: 2050ms;
+    animation-delay: 5s;
+    opacity: 0;
     -moz-box-shadow: 5px 5px 20px 0px rgba(77, 77, 77, 0.5);
     -webkit-box-shadow: 5px 5px 20px 0px rgba(77, 77, 77, 0.5);
     -o-box-shadow: 5px 5px 20px 0px rgba(77, 77, 77, 0.5);
@@ -151,7 +152,7 @@ color: #E1141B;
  }
  #ball101 {
    animation-name: moveball12;
-   background-color: #5A7785;
+   background-color: #5A7785; /* greyblue */
    position: relative;
    animation-duration: 16000ms;
    animation-fill-mode: forwards;
@@ -161,10 +162,9 @@ color: #E1141B;
  }
  #ball103 {
    position: relative;
-   background-color: #ED445A;
+   background-color: #ED445A; /* light red */
    animation-name: moveball13;
    animation-duration: 17000ms;
-   animation-delay: 0ms;
    animation-fill-mode: forwards;
    animation-timing-function: linear;
    animation-iteration-count: infinite;
@@ -176,26 +176,32 @@ color: #E1141B;
   0%
   {
     transform:translate(0px, 0px);
+    opacity: 1;
   }
   20%
    {
     transform:translate(359px, -320px);
+    opacity: 1;
   }
   40%
    {
     transform:translate(750px, 144px);
+    opacity: 1;
   }
   60%
    {
     transform:translate(359px, 401px);
+    opacity: 1;
   }
   80%
    {
     transform:translate(-765px, 286px);
+    opacity: 1;
   }
   100%
    {
     transform:translate(0px, 0px);
+    opacity: 1;
   }
 }
 
@@ -203,34 +209,42 @@ color: #E1141B;
   0%
   {
     transform:translate(0px, 0px);
+    opacity: 1;
   }
   14.29%
   {
     transform:translate(-396px, -304px);
+    opacity: 1;
   }
   28.57%
   {
     transform:translate(-775px, -82px);
+    opacity: 1;
   }
   42.86%
   {
-    transform:translate(-442px, 385px);
+    transform:translate(-442px, 360px);
+    opacity: 1;
   }
   57.14%
   {
-    transform:translate(401px, -306px);
+    transform:translate(401px, -326px);
+    opacity: 1;
   }
   71.43%
   {
     transform:translate(760px, 22px);
+    opacity: 1;
   }
   85.71%
   {
     transform:translate(597px, 380px);
+    opacity: 1;
   }
   100%
   {
     transform:translate(1px, -2px);
+    opacity: 1;
   }
 }
 
@@ -238,34 +252,42 @@ color: #E1141B;
   0%
   {
     transform:translate(0px, 0px);
+    opacity: 1;
   }
   14.29%
   {
     transform:translate(388px, 381px);
+    opacity: 1;
   }
   28.57%
   {
     transform:translate(747px, 252px);
+    opacity: 1;
   }
   42.86%
   {
-    transform:translate(615px, -320px);
+    transform:translate(615px, -350px);
+    opacity: 1;
   }
   57.14%
   {
-    transform:translate(-61px, 381px);
+    transform:translate(-61px, 331px);
+    opacity: 1;
   }
   71.43%
   {
     transform:translate(-775px, 229px);
+    opacity: 1;
   }
   85.71%
   {
     transform:translate(-193px, -320px);
+    opacity: 1;
   }
   100%
   {
     transform:translate(-3px, -1px);
+    opacity: 1;
   }
 }
 
