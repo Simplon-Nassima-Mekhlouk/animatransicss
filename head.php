@@ -65,7 +65,7 @@
 					</li>
 				</a>
 				<a href="annexe/">
-					<li class="black">
+					<li class="annexe">
 						<i class="fa fa-book fa-2x" aria-hidden="true"></i>
 						<h3>Annexe</h3>
 					</li>
