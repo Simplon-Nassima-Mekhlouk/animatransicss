@@ -254,46 +254,46 @@ header > a {
 .leftbar .green:hover::before {
 	background-color: #097054;
 	width: 100%;
-	-moz-box-shadow: -8px 0px 15px 5px #fff;
--webkit-box-shadow: -8px 0px 15px 5px #fff;
--o-box-shadow: -8px 0px 15px 5px #fff;
-box-shadow: -8px 0px 15px 5px #fff;
+	-moz-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
+-webkit-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
+-o-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
+box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
 filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=180, Strength=15);
 }
 .leftbar .yellow:hover::before {
 	background-color: #FFDE00;
 	width: 100%;
-	-moz-box-shadow: -8px 0px 15px 5px #fff;
--webkit-box-shadow: -8px 0px 15px 5px #fff;
--o-box-shadow: -8px 0px 15px 5px #fff;
-box-shadow: -8px 0px 15px 5px #fff;
+	-moz-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
+-webkit-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
+-o-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
+box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
 filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=180, Strength=15);
 }
 .leftbar .blue:hover::before {
 	background-color: #206BA4;
 	width: 100%;
-	-moz-box-shadow: -8px 0px 15px 5px #fff;
--webkit-box-shadow: -8px 0px 15px 5px #fff;
--o-box-shadow: -8px 0px 15px 5px #fff;
-box-shadow: -8px 0px 15px 5px #fff;
+	-moz-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
+-webkit-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
+-o-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
+box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
 filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=180, Strength=15);
 }
 .leftbar .black:hover::before {
 	background-color: #ADB6B5;
 	width: 100%;
-	-moz-box-shadow: -8px 0px 15px 5px #fff;
--webkit-box-shadow: -8px 0px 15px 5px #fff;
--o-box-shadow: -8px 0px 15px 5px #fff;
-box-shadow: -8px 0px 15px 5px #fff;
+	-moz-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
+-webkit-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
+-o-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
+box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
 filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=180, Strength=15);
 }
 .leftbar .orange:hover::before {
 	background-color: #FF9900;
 	width: 100%;
-	-moz-box-shadow: -8px 0px 15px 5px #fff;
--webkit-box-shadow: -8px 0px 15px 5px #fff;
--o-box-shadow: -8px 0px 15px 5px #fff;
-box-shadow: -8px 0px 15px 5px #fff;
+	-moz-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
+-webkit-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
+-o-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
+box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
 filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=180, Strength=15);
 }
 
