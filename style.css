@@ -142,6 +142,7 @@ color: #E1141B;
  #ball100 {
    background-color: purple;
    position: relative;
+   animation-duration: 16000ms;
    animation-name: moveball11;
    animation-fill-mode: forwards;
    animation-timing-function: linear;
