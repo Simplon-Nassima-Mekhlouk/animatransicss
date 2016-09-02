@@ -58,7 +58,7 @@
 						<h3>Transition</h3>
 					</li>
 				</a>
-				<a href="#">
+				<a href="atelier/">
 					<li class="black">
 						<i class="fa fa-book fa-2x" aria-hidden="true"></i>
 						<h3>Atelier</h3>
