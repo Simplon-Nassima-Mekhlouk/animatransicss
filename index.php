@@ -29,11 +29,12 @@ include 'head.php';
 </div>
 <div class="ball1" id="ball105">
 </div>
+<div class="ball1" id="ball106">
+</div>
 <div class="ball2" id="ball200">
 </div>
 <div class="ball2" id="ball201">
 </div>
-<!--<div class="ball2" id="ball202">
-</div>-->
+
 
 <?php include 'footer.php'; ?>

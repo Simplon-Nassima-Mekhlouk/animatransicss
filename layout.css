@@ -255,10 +255,10 @@ header > a {
 	background-color: #097054;
 	width: 100%;
 	-moz-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
--webkit-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
--o-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
-filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=180, Strength=15);
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
+  -o-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
+  box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
+  filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=180, Strength=15);
 }
 .leftbar .yellow:hover::before {
 	background-color: #FFDE00;
