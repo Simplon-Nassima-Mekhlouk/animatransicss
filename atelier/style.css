@@ -1,0 +1,102 @@
+/* modification for layout.css */
+.sidebar {
+	margin-top: 0px;
+}
+/* end mofication for layout.css */
+
+
+
+
+body {
+	font-family: 'Lato', sans-serif;
+	margin: 0px;
+	position: relative;
+}
+img {
+	width: 80%;
+	height: auto;
+}
+
+::selection {
+  background: #ffdfa5;
+}
+
+.page {
+	margin: auto;
+	margin-top: 80px;
+	padding: 0px 0px;
+}
+
+/*
+hr .shadow abs-top
+*/
+
+section, section h2, section .enoncer {
+	transition: all 0.2s linear;
+}
+section {
+	position: relative;
+	margin: auto;
+	background: white;
+	padding: 15px 0px;
+	transition: all 0.3s ease-out;
+	overflow: hidden;
+	text-shadow: 0 0 0.1px #636363;
+}
+
+
+shadow {
+	z-index: 1;
+	position: absolute;
+	width: 100%;
+	background: rgba(0, 0, 0, 0);;
+	height: 5px;
+	-webkit-filter: blur(9px);
+	display: block;
+	transition: all 0.3s ease-out;
+}
+section:hover shadow {
+	background: rgba(0, 0, 0, 1);
+}
+shadow[class="abs-top"] { top: -4px; }
+shadow[class="abs-bottom"] { bottom: -4px }
+
+section h2 {
+	font-size: 2em;
+	text-align: center;
+}
+section .col-6 {
+	vertical-align: middle;
+    display: inline-block;
+    width: 45vw;
+    padding: 25px;
+}
+
+section .enoncer {
+	font-size: 1.3em;
+	-webkit-filter: blur(radius);
+   }
+section .exemple {
+
+}
+
+
+
+@media (max-width: 992px) {
+	section h2 {
+		font-size: 1.2em;
+	}
+	section .enoncer {
+		font-size: 0.8em;
+	}
+}
+
+
+@media (max-width: 533px) {
+	section .enoncer, section .exemple {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+}
+
