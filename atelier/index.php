@@ -9,72 +9,69 @@ include'../head.php';
 
 <div class="page">
 
-
-
-
-<!--
-<a href="#">
-	<section>
-		<shadow class="abs-top"></shadow>
-		<h2>Exercice 1</h2>
-		<div class="col-6 enoncer">
-			<p>Realiser un cube qui se déplace de gauche à droite à l'infini.</p>
-		</div>
-		<div class="col-6 exemple">
-			<img src="images/gif/ex1.gif">
-		</div>
-		<shadow class="abs-bottom"></shadow>
-	</section>
-</a>
--->
-
-
-<div id="list">
-	
-</div>
+<div id="list"></div>
 
 
 
 <script type="text/javascript">
 
-var exercice = {
-	directory: "images/gif/",
-	gifname: "ex",
 
-	enoncer: [
-			"Realiser un cube qui se déplace de gauche à droite à l'infini.",
-			"Realiser un cube qui effectue une rotation sur l'axe Y, ainsi qu'un 'scale'."
-			],
 
-	getGif: function(nb){
-		return this.directory + this.gifname + nb + ".gif"
-	},
-	getEnonce: function(nb){
-		return this.enoncer[nb];
-	},
-	getExercice: function (nb){
-		var content = "	<a href='exercice/" + nb + "/'>\
-							<section>\
+function exercice (ex_nb, aray_text){
+		this.directory = "images/gif/";
+		this.gifname = "ex";
+		this.nb = ex_nb;
+		this.text = aray_text;
+
+		this.getGif = function(){
+			//return this.directory + this.gifname + this.nb + ".gif"
+			return this.directory + this.gifname + "1" + ".gif"
+
+		};
+
+		this.getText = function(){
+			return this.text[this.nb];
+		};
+
+		this.getExercice = function (){
+			var content = "	<section onclick='exercice.afficheExercice(this, " + this.nb + ")'>\
 								<shadow class='abs-top'></shadow>\
-								<h2>Exercice " + nb + "</h2>\
-								<div class='col-6 enoncer'>\
-									<p>" + this.getEnonce(nb)+ "</p>\
+								<h2>Exercice " + this.nb + "</h2>\
+								<div class='col-6 text'>\
+									<p>" + this.getText(this.nb)+ "</p>\
 								</div>\
 								<div class='col-6 exemple'>\
-									<img src='" + this.getGif(nb) + "'>\
+									<img src='" + this.getGif(this.nb) + "'>\
 								</div>\
 								<shadow class='abs-bottom'></shadow>\
-							</section>\
-						</a>";
-		return content;
-	}	
+							</section>";
+			return content;
+		};
+
+		this.afficheExercice = function(element){
+			console.log('clic');
+		};
 }
 
+
+
+var text = [
+	"Simple transition.",
+	"Rotation pendant une transition.",
+	"Rotation pendant une transition à la fois sur X et Y",
+	"Changement de plusieurs propriétés pendant une transition à la fois sur X et Y",
+	"Animation sur plusieurs Div"];
+
+
+var Exercices = new Array();
 
 var list = document.getElementById('list');
-for (var i = 0; i < 10; i++) {
-	list.innerHTML += exercice.getExercice(1);
+for (var i = 0; i < text.length; i++) {
+	var tmp_exercice = new exercice(i, text);
+	list.innerHTML += tmp_exercice.getExercice(i);
+	Exercices.push(tmp_exercice);
 }
+
 
 </script>
 

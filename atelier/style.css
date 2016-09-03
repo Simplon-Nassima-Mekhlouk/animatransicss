@@ -31,7 +31,7 @@ img {
 hr .shadow abs-top
 */
 
-section, section h2, section .enoncer {
+section, section h2, section .text {
 	transition: all 0.2s linear;
 }
 section {
@@ -72,7 +72,7 @@ section .col-6 {
     padding: 25px;
 }
 
-section .enoncer {
+section .text {
 	font-size: 1.3em;
 	-webkit-filter: blur(radius);
    }
@@ -86,14 +86,14 @@ section .exemple {
 	section h2 {
 		font-size: 1.2em;
 	}
-	section .enoncer {
+	section .text {
 		font-size: 0.8em;
 	}
 }
 
 
 @media (max-width: 533px) {
-	section .enoncer, section .exemple {
+	section .text, section .exemple {
 		display: block;
 		width: 100%;
 		text-align: center;
