@@ -3,7 +3,26 @@ code[class*="language-"], pre[class*="language-"] {
   tab-size: 0;
 }
 /* end modification prism.css */
-
+* {
+	box-sizing: border-box;
+  		-webkit-box-sizing: border-box;
+    		-moz-box-sizing: border-box;
+  	text-rendering: optimizeLegibility;
+  		-webkit-font-smoothing: antialiased;
+  			-moz-osx-font-smoothing: grayscale;
+}
+img { 
+    image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated; /* Chrome */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+}
+a {
+	color: inherit;
+}
 
 body {
 	margin: 0;
@@ -41,8 +60,8 @@ header {
 
  header #active_menu a{
 	display: inline-block;
-	width: 25px;
-	margin-left: 25px;
+	width: 45px;
+	margin-left: 15px;
 	cursor: pointer;
 	padding: 10px;
 	transition: all 0.6s ease-in-out;
@@ -51,28 +70,28 @@ header {
 
 header #active_menu {
 		display: inline-block;
+		vertical-align: middle;
 }
 
 header #active_menu span  {
 	display: block;
 	background: white;
 	width: 100%;
-	height: 4px;
-	margin: 3px 0px;
+	height: 3px;
+	margin: 5px 0px;
 }
 
 
 header > a {
 	display: inline-block;
-	font-size: 2em;
+	font-size: 3em;
 	text-decoration: none;
-	margin-top: 5px;
 	margin-left: 25px;
 	color: white;
 	font-weight: lighter;
 	padding-left: 20px;
 	border-left: 2px solid white;
-
+	vertical-align: middle;
 }
 
 .overlay {
@@ -174,6 +193,7 @@ header > a {
 }
 
 .sidebar {
+	z-index: 10;
 	position: fixed;
 	width: 340px;
 	height: 100%;
@@ -186,8 +206,9 @@ header > a {
 	height: 100%;
 }
 .leftbarmenuclose {
+	position: relative;
 	padding: 10px;
-	width: 20px;
+	width: 35px;
 	background-color: rgb(233, 20, 30);
 	margin-left: -10px;
 	z-index: -2;
@@ -200,8 +221,11 @@ header > a {
 }
 .leftbarmenuclose h6 {
 	color: white;
-	margin-top: 350px;
 	transform: rotate(-90deg);
+	font-size: 1.3em;
+    position: absolute;
+    top: 40%;
+    left: -15px;
 }
 
 .leftbar {
@@ -216,9 +240,9 @@ header > a {
 	position: relative;
 }
 
-	a {
+a {
 	 text-decoration: none;
- }
+}
 .leftbar h3, .leftbar i {
 	display: inline-block;
 }
@@ -255,46 +279,46 @@ header > a {
 	background-color: #097054;
 	width: 100%;
 	-moz-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
--webkit-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
--o-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
-filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=180, Strength=15);
+	-webkit-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
+	-o-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
+	box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=180, Strength=15);
 }
 .leftbar .yellow:hover::before {
 	background-color: #FFDE00;
 	width: 100%;
 	-moz-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
--webkit-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
--o-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
-filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=180, Strength=15);
+	-webkit-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
+	-o-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
+	box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=180, Strength=15);
 }
 .leftbar .blue:hover::before {
 	background-color: #206BA4;
 	width: 100%;
 	-moz-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
--webkit-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
--o-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
-filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=180, Strength=15);
+	-webkit-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
+	-o-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
+	box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=180, Strength=15);
 }
 .leftbar .black:hover::before {
 	background-color: #ADB6B5;
 	width: 100%;
 	-moz-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
--webkit-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
--o-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
-filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=180, Strength=15);
+	-webkit-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
+	-o-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
+	box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=180, Strength=15);
 }
 .leftbar .orange:hover::before {
 	background-color: #FF9900;
 	width: 100%;
 	-moz-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
--webkit-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
--o-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
-filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=180, Strength=15);
+	-webkit-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
+	-o-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
+	box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.5);
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=180, Strength=15);
 }
 
 #slideleft {
@@ -302,4 +326,16 @@ margin-left: -342px;
 }
 #slideleft:target {
 margin-left: 0px;
+}
+
+
+
+@media (max-width: 992px) {
+	header > a {
+		font-size: 1em;
+		margin-left: 10px;
+	}
+	header #active_menu a {
+		margin-left: 0px;
+	}
 }
