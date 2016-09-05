@@ -11,6 +11,11 @@ body {
   margin: auto;
 
 }
+h5 {
+  width: 50vw;
+  text-align: center;
+  margin-bottom: 5vw;
+}
 .aligncenter {
   margin: auto;
 }
@@ -32,11 +37,6 @@ body {
 }
 #giftranslatex {
   animation-name:translatex;   /* on annonce le nom animation defini dans le keyframes */
-}
-h5 {
-  width: 50vw;
-  text-align: center;
-  margin-bottom: 5vw;
 }
 @keyframes translatex {
   0% /* etape de l'animation */
@@ -63,7 +63,6 @@ h5 {
 
 #giftranslatexandrotate {
   animation-name:translateandrotate;
-
 }
 @keyframes translateandrotate { /* ATTENTON QUAND ON FAIT UNE ANIMATION TOUJOURS SE BASER SUR LA POSITION INITIAL */
   0%
@@ -89,7 +88,6 @@ h5 {
 }
 #giftranslaterotatexy {
   animation-name:translateandrotatexy;
-
 }
 @keyframes translateandrotatexy {
   0%
@@ -116,7 +114,6 @@ h5 {
 
 #giftranslatenewprop {
   animation-name:translatenewprop;
-
 }
 @keyframes translatenewprop {
   0% /* etape de l'animation */
@@ -164,6 +161,18 @@ h5 {
        transform:rotate(-360deg);
       }
 }
+
+
+
+/*
+ *  JE ME SUIS ARRETER ICI
+ *  CELLE DU BAS N'ONT PAS ETE INCLUSE
+ */
+
+
+
+
+
 #rotationdiv {
   animation-name: circle;
   animation-duration: 4000ms;
