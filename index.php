@@ -2,23 +2,25 @@
 $index = true;
 include 'head.php';
 ?>
-	<div class="page">
-
-
-<a href="#">
-<div class="animation">
-	<h1>Animation</h1>
-</div>
-</a>
-<a href="#">
-<div class="transition">
-	<h1>Transition</h1>
-</div>
-</a>
-
-
-	</div> <!-- END PAGE -->
 </div> <!-- END SIDEBAR -->
+
+<div class="page">
+
+
+	<a href="animation/">
+		<div class="animation">
+			<h1>Animation</h1>
+		</div>
+	</a>
+	<a href="transition/">
+		<div class="transition">
+			<h1>Transition</h1>
+		</div>
+	</a>
+
+
+</div> <!-- END PAGE -->
+
 <div class="ball1" id="ball100">
 </div>
 <div class="ball1" id="ball101">

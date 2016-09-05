@@ -10,6 +10,7 @@ code[class*="language-"], pre[class*="language-"] {
 * {
     overflow: hidden;
 }
+
 .sidebar {
     width: 100%;
     margin-top: 94px;
@@ -22,6 +23,10 @@ code[class*="language-"], pre[class*="language-"] {
     width: 100%;
     margin-top: 120px;
     text-align: center;
+}
+
+.page a {
+    display: inline-block;
 }
 
 .page .animation, .page .transition {
@@ -40,12 +45,9 @@ code[class*="language-"], pre[class*="language-"] {
 
 .page .animation {
     background-color: #E1141B;
-<<<<<<< HEAD
-=======
     color: white;
->>>>>>> 3805a5baf4b6efa20ac44b36f7db0ec0e8faeb29
     animation-name: drop;
-    /*position: relative;*/
+    position: relative;
     transition: all 0.2s ease-in-out;
 }
 
