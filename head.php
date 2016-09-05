@@ -3,18 +3,20 @@
 	<title>Animation/Transition</title>
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Lato" rel="stylesheet">
 	<link rel="icon" class="fa fa-css3" aria-hidden="true" />
 	<?php
 	// Si la variable $fichier_css existe
 	// Nous mettons une balise avec le fichier css
 		if (isset($fichier_css)) {
-			echo '<link rel="stylesheet" type="text/css" href="../lib/prism.css">';
+			echo '<link rel="stylesheet" type="text/css" href="../lib/prism/prism.css">
+				<link rel="stylesheet" type="text/css" href="../lib/aceditor/acestart.css">';
 			echo '<link rel="stylesheet" type="text/css" href="../layout.css">';
 			echo $css = '<link rel="stylesheet" type="text/css" href="'. $fichier_css .'">';
 
 		} else {
-			echo '<link rel="stylesheet" type="text/css" href="lib/prism.css">';
+			echo '<link rel="stylesheet" type="text/css" href="lib/prism/prism.css">';
 			echo '<link rel="stylesheet" type="text/css" href="layout.css">';
 		}
 
@@ -39,7 +41,7 @@
 	<div class="sidebar"  id="slideleft">
 		<div class="leftbar">
 			<ul>
-				<a href="http://localhost/animtransicss/">
+				<a href="#">
 					<li class="green">
 						<i class="fa fa-home fa-2x" aria-hidden="true"></i>
 						<h3>Home</h3>

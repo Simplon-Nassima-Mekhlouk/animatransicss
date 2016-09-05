@@ -40,6 +40,10 @@ code[class*="language-"], pre[class*="language-"] {
 
 .page .animation {
     background-color: #E1141B;
+<<<<<<< HEAD
+=======
+    color: white;
+>>>>>>> 3805a5baf4b6efa20ac44b36f7db0ec0e8faeb29
     animation-name: drop;
     /*position: relative;*/
     transition: all 0.2s ease-in-out;
@@ -76,7 +80,9 @@ code[class*="language-"], pre[class*="language-"] {
 
 .page .transition {
     background-color: #00F076;
-    /*position: relative;*/
+    color: white;
+    position: relative;
+    transition: all 0.2s ease-in-out;
     animation-name: jump;
     margin-left: -10px;
 }
