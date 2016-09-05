@@ -11,7 +11,7 @@ code[class*="language-"], pre[class*="language-"] {
   		-webkit-font-smoothing: antialiased;
   			-moz-osx-font-smoothing: grayscale;
 }
-img { 
+img {
     image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
     image-rendering: -moz-crisp-edges;          /* Firefox                        */
     image-rendering: -o-crisp-edges;            /* Opera                          */
@@ -225,7 +225,7 @@ header > a {
 	font-size: 1.3em;
     position: absolute;
     top: 40%;
-    left: -15px;
+    left: -20px;
 }
 
 .leftbar {
