@@ -3,44 +3,6 @@
 top: 80px;
 }
 /* end modification for acestart.css */
-/* modification for layout.css */
-.sidebar {
-	margin-top: 0px;
-}
-/* end mofication for layout.css */
-
-
-
-::-webkit-scrollbar {
-  width: 7px;
-  height: 7px;
-}
-::-webkit-scrollbar-button {
-  width: 0px;
-  height: 0px;
-}
-::-webkit-scrollbar-thumb {
-  background: #93B7EF;
-  border: 0px none #ffffff;
-  border-radius: 50px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #4984E6;
-}
-::-webkit-scrollbar-thumb:active {
-  background: #4984E6;
-}
-::-webkit-scrollbar-track {
-  background: #666666;
-  border: 0px none #ffffff;
-  border-radius: 100px;
-}
-
-::-webkit-scrollbar-corner {
-  background: transparent;
-}
-
-
 
 #load {
 	display: block;
@@ -78,7 +40,7 @@ img {
 
 .page {
 	margin: auto;
-	margin-top: 80px;
+	margin-top: 79px;
 	padding: 0px 0px;
 }
 
