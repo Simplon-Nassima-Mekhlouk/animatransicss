@@ -222,10 +222,10 @@ header > a {
 .leftbarmenuclose h6 {
 	color: white;
 	transform: rotate(-90deg);
-	font-size: 1.3em;
+	font-size: 1.1em;
     position: absolute;
     top: 40%;
-    left: -20px;
+    left: -10px;
 }
 
 .leftbar {

@@ -7,12 +7,13 @@ code[class*="language-"], pre[class*="language-"] {
 
 /* end modification for prism.css */
 
-* {
+body {
     overflow: hidden;
 }
 .sidebar {
     width: 100%;
-    margin-top: 94px;
+    margin-top: 79px;
+    z-index: 4;
 }
 
 .page {
@@ -40,10 +41,7 @@ code[class*="language-"], pre[class*="language-"] {
 
 .page .animation {
     background-color: #E1141B;
-<<<<<<< HEAD
-=======
     color: white;
->>>>>>> 3805a5baf4b6efa20ac44b36f7db0ec0e8faeb29
     animation-name: drop;
     /*position: relative;*/
     transition: all 0.2s ease-in-out;
@@ -387,21 +385,6 @@ code[class*="language-"], pre[class*="language-"] {
     }
 }
 
-/*.ball2 {
-    width: 15vw;
-    height: 30vh;
-    border-radius: 49vw;
-    z-index: -101;
-    position: relative;
-    animation-name: move2;
-    animation-duration: 3000ms;
-    animation-delay: 0ms;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    transition: all 0.6 ease-in-out;
-    display: inline-block;
-}*/
-
 @keyframes move2 {
     0% {
         transform: translate3d(150px, 140px, 0px) scale(1);
@@ -418,18 +401,3 @@ code[class*="language-"], pre[class*="language-"] {
         opacity: 1;
     }
 }
-/*
-#ball200 {
-    left: -10%;
-    top: -32%;
-    background-color: #34A853;
-    animation-duration: 10s;
-}
-
-#ball201 {
-    z-index: 1;
-    left: 947px;
-    bottom: -5%;
-    background-color: rgba(255, 204, 1, 0.2);
-    animation-duration: 15s;
-}*/
