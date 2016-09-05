@@ -1,8 +1,63 @@
+/* modification for acestart.css */
+.ace_editor.fullScreen {
+top: 80px;
+}
+/* end modification for acestart.css */
 /* modification for layout.css */
 .sidebar {
 	margin-top: 0px;
 }
 /* end mofication for layout.css */
+
+
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #93B7EF;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4984E6;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #4984E6;
+}
+::-webkit-scrollbar-track {
+  background: #666666;
+  border: 0px none #ffffff;
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+
+
+#load {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 15;
+	background: white;
+	text-align: center;
+	opacity: 1;
+	transition: opacity 0.2s linear;
+}
+#load img {
+	width: 100px;
+	height: auto;
+	margin-top: 40vh;
+}
 
 
 
@@ -42,6 +97,8 @@ section {
 	transition: all 0.3s ease-out;
 	overflow: hidden;
 	text-shadow: 0 0 0.1px #636363;
+	cursor: hand;
+	border-top: 1px solid #b3d1ff;
 }
 
 
@@ -74,26 +131,133 @@ section .col-6 {
 
 section .text {
 	font-size: 1.3em;
-	-webkit-filter: blur(radius);
+	padding-left: 10vw;
    }
 section .exemple {
 
 }
 
 
+#popup {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: 4;
+	background: rgba(0,0,0,0.50);
+	opacity: 0;
+    -webkit-filter: blur(50px);
+    transition: opacity 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out;
+}
+
+#popup #content {
+	position: absolute;
+	top: 80;
+	left: 0;
+	background-color: white;
+	width: 100%;
+	height: 89.5%;
+	transform-origin: 50% 50%;
+	overflow-y: auto;
+	border-radius: 5px;
+}
+#popup #content > button {
+	position: absolute;
+    background: none;
+    border: none;
+    float: right;
+    color: red;
+    cursor: hand;
+    border: 1px solid red;
+    padding: 5px 7px;
+    border-radius: 20px;
+    top: 10px;
+    right: 10px;
+    transition: all 0.2s ease-in-out;
+}
+#popup #content > button:hover {
+	color: white;
+	background: red;
+}
+#popup #content #title {
+	text-align: center;
+	margin: 40px 0px;
+}
+#popup #content #text {
+	margin-left: 10vw;
+}
+#popup #content .btn-choice-lng-sm {
+	display: none;
+	margin-left: 40px;
+}
+#popup #content .btn-choice-lng-sm button {
+	width: auto;
+	height: 30px;
+	border: none;
+	border-radius: 3px;
+	margin-bottom: -3px;
+	padding: 5px 10px;
+	cursor: hand;
+	width: auto;
+}
+#popup #content .btn-choice-lng-sm #btn-html {
+	background: #272822;
+	color: white;
+}
+#popup #content .btn-choice-lng-sm #btn-css {
+	background: #272822;
+	color: white;
+}
+
+
+.exercice hr {
+    height: 3px;
+    background: #8f908a;
+    border: none;
+    border-radius: 5px;
+    margin: 20px 25px;
+}
+.exercice .col-6 {width: 49.8%;}
+
+.exercice form {
+    width: 100%;
+}
+.exercice form #html, .exercice form #css {
+	display: inline-block;
+}
+
+.exercice section {
+	width: 100%;
+}
+.exercice .resultat, .exercice .afaire {
+	display: inline-block;
+	vertical-align: top;
+}
+
+
 
 @media (max-width: 992px) {
+	#popup #content .btn-choice-lng-sm {
+		display: inline-block;
+	}
+	.exercice .col-6 {width: 100%;}
+	.exercice form #html {
+		display: none;
+	}
+	.exercice form #css {
+		display: block;
+	}
 	section h2 {
 		font-size: 1.2em;
 	}
 	section .text {
-		font-size: 0.8em;
+		font-size: 1em;
 	}
 }
 
 
 @media (max-width: 533px) {
 	section .text, section .exemple {
+		padding-left: 25px;
 		display: block;
 		width: 100%;
 		text-align: center;
