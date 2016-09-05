@@ -10,6 +10,7 @@ code[class*="language-"], pre[class*="language-"] {
 body {
     overflow: hidden;
 }
+
 .sidebar {
     width: 100%;
     margin-top: 79px;
@@ -23,6 +24,10 @@ body {
     width: 100%;
     margin-top: 120px;
     text-align: center;
+}
+
+.page a {
+    display: inline-block;
 }
 
 .page .animation, .page .transition {
@@ -43,7 +48,7 @@ body {
     background-color: #E1141B;
     color: white;
     animation-name: drop;
-    /*position: relative;*/
+    position: relative;
     transition: all 0.2s ease-in-out;
 }
 
