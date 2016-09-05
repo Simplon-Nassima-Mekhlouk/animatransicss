@@ -15,13 +15,13 @@ include'../head.php';
     <div class="row">
       <div class="col-md-12 text-center">
         <h1>Animations CSS 3</h1>
-        <h2 style="font-size:18px;line-height: normal">Survolez les éléments pour visualiser les effets</h2>
+        <h2>Survolez les éléments pour visualiser les effets,<br>cliquez sur les titres pour découvrir le code</h2>
         <div class="colored-line"></div>
         <div class="row ctn-demo">
 
           <div class="col-md-4 text-center">
             <div class="exemple">
-              <a href="#text1"><h5>Bounce</h5></a>
+              <a href="#text1"><h3>Bounce</h3></a>
               <div class="element img-circle " id="bounce"></div>
             </div>
           </div>
@@ -38,7 +38,7 @@ include'../head.php';
 
           <div class="col-md-4 text-center">
             <div class="exemple">
-              <a href="#text2"><h5>Flash</h5></a>
+              <a href="#text2"><h3>Flash</h3></a>
               <div class="element" id="flash"></div>
             </div>
           </div>
@@ -55,7 +55,7 @@ include'../head.php';
 
           <div class="col-md-4 text-center">
             <div class="exemple">
-              <a href="#text3"><h5>Pulse</h5></a>
+              <a href="#text3"><h3>Pulse</h3></a>
               <div class="element img-circle uni" id="pulse"></div>
             </div>
           </div>
@@ -75,7 +75,7 @@ include'../head.php';
 
           <div class="col-md-4 text-center">
             <div class="exemple">
-              <a href="#text4"><h5>RubberBand</h5></a>
+              <a href="#text4"><h3>RubberBand</h3></a>
               <div class="element" id="rubberBand"></div>
             </div>
           </div>
@@ -92,7 +92,7 @@ include'../head.php';
 
           <div class="col-md-4 text-center">
             <div class="exemple">
-              <a href="#text5"><h5>Shake</h5></a>
+              <a href="#text5"><h3>Shake</h3></a>
               <div class="element img-circle" id="shake"></div>
             </div>
           </div>
@@ -109,7 +109,7 @@ include'../head.php';
 
           <div class="col-md-4 text-center">
             <div class="exemple">
-              <a href="#text9"><h5>Jello</h5></a>
+              <a href="#text9"><h3>Jello</h3></a>
               <div class="element img-circle" id="jello"></div>
             </div>
           </div>
@@ -129,7 +129,7 @@ include'../head.php';
 
           <div class="col-md-4 text-center">
             <div class="exemple">
-              <a href="#text7"><h5>Tada</h5></a>
+              <a href="#text7"><h3>Tada</h3></a>
               <div class="element" id="tada"></div>
             </div>
           </div>
@@ -146,7 +146,7 @@ include'../head.php';
 
           <div class="col-md-4 text-center">
             <div class="exemple">
-              <a href="#text8"><h5>Wobble</h5></a>
+              <a href="#text8"><h3>Wobble</h3></a>
               <div class="element" id="wobble"></div>
             </div>
           </div>
@@ -163,7 +163,7 @@ include'../head.php';
 
           <div class="col-md-4 text-center">
             <div class="exemple">
-              <a href="#text6"><h5>Swing</h5></a>
+              <a href="#text6"><h3>Swing</h3></a>
               <div class="element" id="swing"></div>
             </div>
           </div>
