@@ -7,16 +7,9 @@ code[class*="language-"], pre[class*="language-"] {
 
 /* end modification for prism.css */
 
-body {
+#balles {
     overflow: hidden;
 }
-
-.sidebar {
-    width: 100%;
-    margin-top: 79px;
-    z-index: 4;
-}
-
 .page {
     position: relative;
     display: inline-block;

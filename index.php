@@ -20,7 +20,7 @@ include 'head.php';
 
 
 </div> <!-- END PAGE -->
-
+<div id="balles">
 <div class="ball1" id="ball100">
 </div>
 <div class="ball1" id="ball101">
@@ -36,6 +36,7 @@ include 'head.php';
 <div class="ball2" id="ball200">
 </div>
 <div class="ball2" id="ball201">
+</div>
 </div>
 
 
