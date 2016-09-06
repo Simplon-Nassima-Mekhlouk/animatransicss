@@ -147,11 +147,10 @@ section .exemple {
 #popup #content #text {
 	margin-left: 10vw;
 }
-#popup #content .btn-choice-lng-sm {
-	display: none;
+#popup #content .btn-choice-lng {
 	margin-left: 40px;
 }
-#popup #content .btn-choice-lng-sm button {
+#popup #content .btn-choice-lng button {
 	width: auto;
 	height: 30px;
 	border: none;
@@ -161,23 +160,28 @@ section .exemple {
 	cursor: hand;
 	width: auto;
 }
-#popup #content .btn-choice-lng-sm #btn-html {
+#popup #content .btn-choice-lng #btn-html {
 	background: #272822;
 	color: white;
 }
-#popup #content .btn-choice-lng-sm #btn-css {
+#popup #content .btn-choice-lng #btn-css {
 	background: #272822;
 	color: white;
 }
 
-
-.exercice hr {
-    height: 3px;
-    background: #8f908a;
-    border: none;
-    border-radius: 5px;
-    margin: 20px 25px;
+.exercice span[class="lg"] {
+	background: #272822;
+	color: white;
+	float: left;
+	height: 30px;
+	border: none;
+	border-radius: 3px;
+	margin-bottom: -3px;
+	margin-left: 47px;
+	padding: 5px 10px;
+	cursor: hand;
 }
+
 .exercice .col-6 {width: 49.8%;}
 
 .exercice form {
@@ -195,12 +199,11 @@ section .exemple {
 	vertical-align: top;
 }
 
-
+.sm {display: none;}
 
 @media (max-width: 992px) {
-	#popup #content .btn-choice-lng-sm {
-		display: inline-block;
-	}
+	.sm {display: inline-block;}
+	.lg {display: none;}
 	.exercice .col-6 {width: 100%;}
 	.exercice form #html {
 		display: none;
