@@ -89,7 +89,7 @@ var CreateBalls = {
 
 }
 
-for (var i = 0; i < 150; i++){
+for (var i = 0; i < 100; i++){
 CreateBalls.ball();
 
 };
