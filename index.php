@@ -21,50 +21,78 @@ include 'head.php';
 
 </div> <!-- END PAGE -->
  <div id="balles">
- <!--
-<div class="ball1" id="ball100">
 </div>
-<div class="ball1" id="ball101">
-</div>
-<div class="ball1" id="ball103">
-</div>
-<div class="ball1" id="ball104">
-</div>
-<div class="ball1" id="ball105">
-</div>
-<div class="ball1" id="ball106">
-</div>
-<div class="ball2" id="ball200">
-</div>
-<div class="ball2" id="ball201">
-</div>
--->
-</div>
+<style id="newstylecss">
+
+</style>
 <script>
-1
 var CreateBalls = {
 	pickColor: "",
 	obj:"",
 	color: ["red","green","yellow","blue","purple","grey","black","orange","pink"],
+	addKeyframe: function() {
+	 var randomTranslate = function() {
+		 return Math.floor(Math.random()* 2000)
+	 };
+	 /*var randomAnimDuration = function() {
+		 return Math.floor(Math.random()* 20000)
+	 };*/ // var pour appliqué une durée aléatoirement. || animation-duration:" + randomAnimDuration() +"ms;"+ "\n\
+	 var styleDiv = document.querySelector("#newstylecss");
+	 var ballcss = "#ball" + i + "{\n\
+		animation-name: animball" + i + ";" + "\n\
+	 }\n\
+	 @keyframes animball" + i + " {\n\
+		 0% {\n\
+				 transform: translate(" + randomTranslate() + "px, " + randomTranslate() + "px);\n\
+				 opacity: 1;\n\
+		 }\n\
+		 20% {\n\
+				 transform: translate(" + randomTranslate() + "px, " + randomTranslate() + "px);\n\
+				 opacity: 1;\n\
+		 }\n\
+		 40% {\n\
+				 transform: translate(" + randomTranslate() + "px, " + randomTranslate() + "px);\n\
+				 opacity: 1;\n\
+		 }\n\
+		 60% {\n\
+				 transform: translate(" + randomTranslate() + "px, " + randomTranslate() + "px);\n\
+				 opacity: 1;\n\
+		 }\n\
+		 80% {\n\
+				 transform: translate(" + randomTranslate() + "px, " + randomTranslate() + "px);\n\
+				 opacity: 1;\n\
+		 }\n\
+		 100% {\n\
+				 transform: translate(" + randomTranslate() + "px, " + randomTranslate() + "px);\n\
+				 opacity: 1;\n\
+		 }\n\
+	 }\n\
+	 ";
+	 console.log(ballcss);
+	 styleDiv.innerHTML += ballcss;
+ 							 },
 	randomColor: function() {
 		var randomNumber =  Math.floor(Math.random()* this.color.length);
 	 	this.pickColor = this.color[randomNumber];
-	},
+							 },
 	ball: function() {
-		this.randomColor();
-		this.obj = document.createElement('div');
-		this.obj.innerText = "LOL";
-		this.obj.id = "ball1";
-		this.obj.style.backgroundColor = this.pickColor;
 		var container = document.querySelector('#balles');
-		// container.appendChild(this.obj);
-	}
+		this.randomColor();
+		this.addKeyframe();
+		this.obj = document.createElement('div');
+		this.obj.innerText = "";
+		this.obj.id = "ball" + i;
+		this.obj.className = "ball";
+		this.obj.style.backgroundColor = this.pickColor;
+		container.appendChild(this.obj);
+			  }
 
 }
-// setInterval(function(){ CreateBalls.ball();console.log(CreateBalls.obj); }, 1000);
 
+for (var i = 0; i < 150; i++){
 CreateBalls.ball();
-console.log(CreateBalls.obj);
+
+};
 </script>
 
 <?php include 'footer.php'; ?>
