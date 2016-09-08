@@ -31,15 +31,17 @@ var CreateBalls = {
 	obj:"",
 	color: ["red","green","yellow","blue","purple","grey","black","orange","pink"],
 	addKeyframe: function() {
+	 var screenSize = window.innerWidth;
 	 var randomTranslate = function() {
-		 return Math.floor(Math.random()* 2000)
+		 return Math.floor(Math.random()* screenSize)
 	 };
-	 /*var randomAnimDuration = function() {
-		 return Math.floor(Math.random()* 20000)
-	 };*/ // var pour appliqué une durée aléatoirement. || animation-duration:" + randomAnimDuration() +"ms;"+ "\n\
+	 var randomAnimDuration = function() {
+		 return Math.floor(Math.random()* 10000)
+	 }; // var pour appliqué une durée aléatoirement. || animation-duration:" + randomAnimDuration() +"ms;"+ "\n\
 	 var styleDiv = document.querySelector("#newstylecss");
 	 var ballcss = "#ball" + i + "{\n\
 		animation-name: animball" + i + ";" + "\n\
+		animation-delay:" + randomAnimDuration() +"ms;"+ "\n\
 	 }\n\
 	 @keyframes animball" + i + " {\n\
 		 0% {\n\

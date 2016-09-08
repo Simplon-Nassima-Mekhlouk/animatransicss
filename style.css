@@ -155,12 +155,12 @@ body {
 }
 
 .ball {
-    width:8px;
-    height: 8px;
+    width:6px;
+    height: 6px;
     top: 0;
     animation-direction:alternate-reverse;
     /*left: 50%;*/
-    border-radius: 8px;
+    border-radius: 6px;
     animation-duration: 16s;
     opacity: 1;
     position: absolute;
@@ -168,10 +168,10 @@ body {
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    -moz-box-shadow: 5px 5px 20px 0px rgba(77, 77, 77, 0.5);
+    /*-moz-box-shadow: 5px 5px 20px 0px rgba(77, 77, 77, 0.5);
     -webkit-box-shadow: 5px 5px 20px 0px rgba(77, 77, 77, 0.5);
     -o-box-shadow: 5px 5px 20px 0px rgba(77, 77, 77, 0.5);
-    box-shadow: 5px 5px 20px 0px rgba(77, 77, 77, 0.5);
+    box-shadow: 5px 5px 20px 0px rgba(77, 77, 77, 0.5);*/
 }
 
 @media (max-width: 820px) {
