@@ -32,8 +32,12 @@ var CreateBalls = {
 	color: ["red","green","yellow","blue","purple","grey","black","orange","pink"],
 	addKeyframe: function() {
 	 var screenSize = window.innerWidth;
+	 var screenHeight = window.innerHeight;
+	 var randomHeight = function() {
+		 return Math.floor(Math.random()* screenHeight);
+	 };
 	 var randomTranslate = function() {
-		 return Math.floor(Math.random()* screenSize)
+		 return Math.floor(Math.random()* screenSize);
 	 };
 	 var randomAnimDuration = function() {
 		 return Math.floor(Math.random()* 10000)
@@ -45,27 +49,27 @@ var CreateBalls = {
 	 }\n\
 	 @keyframes animball" + i + " {\n\
 		 0% {\n\
-				 transform: translate(" + randomTranslate() + "px, " + randomTranslate() + "px);\n\
+				 transform: translate(" + randomTranslate() + "px, " + randomHeight() + "px);\n\
 				 opacity: 1;\n\
 		 }\n\
 		 20% {\n\
-				 transform: translate(" + randomTranslate() + "px, " + randomTranslate() + "px);\n\
+				 transform: translate(" + randomTranslate() + "px, " + randomHeight() + "px);\n\
 				 opacity: 1;\n\
 		 }\n\
 		 40% {\n\
-				 transform: translate(" + randomTranslate() + "px, " + randomTranslate() + "px);\n\
+				 transform: translate(" + randomTranslate() + "px, " + randomHeight() + "px);\n\
 				 opacity: 1;\n\
 		 }\n\
 		 60% {\n\
-				 transform: translate(" + randomTranslate() + "px, " + randomTranslate() + "px);\n\
+				 transform: translate(" + randomTranslate() + "px, " + randomHeight() + "px);\n\
 				 opacity: 1;\n\
 		 }\n\
 		 80% {\n\
-				 transform: translate(" + randomTranslate() + "px, " + randomTranslate() + "px);\n\
+				 transform: translate(" + randomTranslate() + "px, " + randomHeight() + "px);\n\
 				 opacity: 1;\n\
 		 }\n\
 		 100% {\n\
-				 transform: translate(" + randomTranslate() + "px, " + randomTranslate() + "px);\n\
+				 transform: translate(" + randomTranslate() + "px, " + randomHeight() + "px);\n\
 				 opacity: 1;\n\
 		 }\n\
 	 }\n\
