@@ -50,27 +50,21 @@ var CreateBalls = {
 	 @keyframes animball" + i + " {\n\
 		 0% {\n\
 				 transform: translate(" + randomTranslate() + "px, " + randomHeight() + "px);\n\
-				 opacity: 1;\n\
 		 }\n\
 		 20% {\n\
 				 transform: translate(" + randomTranslate() + "px, " + randomHeight() + "px);\n\
-				 opacity: 1;\n\
 		 }\n\
 		 40% {\n\
 				 transform: translate(" + randomTranslate() + "px, " + randomHeight() + "px);\n\
-				 opacity: 1;\n\
 		 }\n\
 		 60% {\n\
 				 transform: translate(" + randomTranslate() + "px, " + randomHeight() + "px);\n\
-				 opacity: 1;\n\
 		 }\n\
 		 80% {\n\
 				 transform: translate(" + randomTranslate() + "px, " + randomHeight() + "px);\n\
-				 opacity: 1;\n\
 		 }\n\
 		 100% {\n\
 				 transform: translate(" + randomTranslate() + "px, " + randomHeight() + "px);\n\
-				 opacity: 1;\n\
 		 }\n\
 	 }\n\
 	 ";
