@@ -1,0 +1,126 @@
+h1{
+	font-family: New Century Schoolbook, serif;
+	color: #DA70D6;
+	font-weight: bold;
+	padding-bottom: 5%;
+	margin-top: 5%;
+}
+
+h5 {
+	font-family: New Century Schoolbook, serif;
+	color: #DA70D6;
+	font-weight: bold;
+}
+
+	body {
+	background: linear-gradient(to right, #D8BFD8, #FAFAD2);
+	}
+
+.ctn-demo {
+	margin-top: 80px
+	}
+
+.exemple {
+	background: #FFF0F5;
+	height: 200px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	margin: 15px;
+	padding-top: 10px;
+	}
+
+.ctn-demo [class^="col-"] {
+	margin-bottom: 20px;
+	}
+
+.element {
+	width:110px;
+	height: 110px;
+	background: #D8BFD8;
+	margin: auto;
+	}
+
+.element:hover {
+	cursor: pointer;
+	background: #DA70D6;
+	}
+
+.bg-change:hover {
+	transition: all 0.5s ease-out;
+	-webkit-transition: all 0.5s ease-in;
+	}
+
+.translate {
+	transition-property: top;
+	-webkit-transition-property: top;
+	transition-duration: .5s;
+	transition-timing-function: ease-out;
+	top: 0;
+	position: relative;
+	}
+
+.translate:hover {
+	top: 30px;
+	}
+
+.rotate {
+	transition-property: transform, width, height, top;
+	-webkit-transition-property: transform, width, height, top;
+    transition-duration: .5s;
+	transition-timing-function: ease-out;
+	position: relative;
+	}
+
+.rotate:hover {
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	width:80px;
+	height:80px;
+	top: 20px;
+	}
+
+.zoom {
+	transition-property: transform;
+	-webkit-transition-property: transform;
+    transition-duration: .5s;
+	transition-timing-function: ease-out;
+	}
+
+.zoom:hover {
+	transform: scale(1.2);
+   	-webkit-transform: scale(1.2);
+}
+
+.skew {
+	transition: transform 0.5s ease-out;
+	-webkit-transition: transform 0.5s ease-out;
+	}
+
+.skew:hover {
+   	transform: skew(45deg);
+   	-webkit-transform: skew(45deg);
+   }
+
+.opacity:hover {
+	opacity: 0.7;
+	transition: all 0.5s ease-out;
+	-webkit-transition: all 0.5s ease-in;
+	}
+
+.width {
+	transition: width 0.5s ease-out;
+	-webkit-transition: width 0.5s ease-out;
+	}
+
+.width:hover {
+	width: 80%;
+	}
+
+.delay {
+	transition: width 0.5s ease-in 0.4s;
+	-webkit-transition: width 0.5s ease-in 0.4s;
+	}
+
+.delay:hover {
+	width: 80%;
+	}
