@@ -143,12 +143,34 @@ section .exemple {
 #popup #content #title {
 	text-align: center;
 	margin: 40px 0px;
+	display: block;
 }
 #popup #content #text {
 	margin-left: 10vw;
+	display: block;
+	vertical-align:top;
+} 
+#popup #content .afaire {
+	border: 1px solid black;
+	border-radius: 5px;
+	position: relative;
+	display: block;
+	max-width: 500px;
+	margin: auto;
+	margin-bottom: 25px;
+	text-align: center;
+}
+#popup #content .afaire::before {
+	content: "A reproduire";
+	background-color: white;
+	padding: 5px 10px;
+	position: absolute;
+	top: -15px;
+	left: 25px;
 }
 #popup #content .btn-choice-lng {
 	margin-left: 40px;
+	display: none;
 }
 #popup #content .btn-choice-lng button {
 	width: auto;
@@ -159,12 +181,11 @@ section .exemple {
 	padding: 5px 10px;
 	cursor: hand;
 	width: auto;
-}
-#popup #content .btn-choice-lng #btn-html {
-	background: #272822;
+	background: #8B8E7A;
 	color: white;
 }
-#popup #content .btn-choice-lng #btn-css {
+
+#popup #content .btn-choice-lng .active {
 	background: #272822;
 	color: white;
 }
@@ -190,19 +211,26 @@ section .exemple {
 .exercice form #html, .exercice form #css {
 	display: inline-block;
 }
+.exercice p {
+	font-size: 13px;
+	text-align: center;
+	visibility: hidden;
+}
 
 .exercice section {
 	width: 100%;
+	padding: 15px;
 }
-.exercice .resultat, .exercice .afaire {
+.exercice .resultat {
 	display: inline-block;
 	vertical-align: top;
+	position: relative;
 }
 
 .sm {display: none;}
 
 @media (max-width: 992px) {
-	.sm {display: inline-block;}
+	#popup #content .btn-choice-lng {display: inline-block;}
 	.lg {display: none;}
 	.exercice .col-6 {width: 100%;}
 	.exercice form #html {

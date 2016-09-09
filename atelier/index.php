@@ -19,9 +19,12 @@ include'../head.php';
 		<button id="close" title="Fermer"><i class="fa fa-1x fa-times" aria-hidden="true"></i></button>
 		<h2 id="title"></h2>
 		<h3 id="text"></h3>
-		<div class="btn-choice-lng sm">
+		<div class="afaire">
+			<img src="">
+		</div>	
+		<div id="btn-choice" class="btn-choice-lng sm">
 			<button id="btn-html" data-lng="html">HTML</button>
-			<button id="btn-css" data-lng="css">CSS</button>
+			<button id="btn-css" data-lng="css" class="active">CSS</button>
 		</div>
 		<div class="exercice">
 			<form>
@@ -33,6 +36,7 @@ include'../head.php';
 				<span class="lg" style="margin-left: 47px;">CSS</span>
 				<textarea id="editor_css"></textarea>
 				</div>
+				<p id="mfs">Pressez F11 pour afficher le code en plein ecran</p>
 				<!--<button onclick="verifCss('code_css'); return false">Verification du CSS</button>-->
 			</form>
 			<section>
@@ -40,17 +44,12 @@ include'../head.php';
 					<style id="new_css"></style>
 					<div id="new_html"></div>
 				</div>
-				<div class="col-6 afaire">
-					<img src="">
-				</div>
 			</section>
 		</div>
 	</div>
 </div>
 
 <div id="list"></div>
-
-
 
 
 <?php include '../lib/aceditor/acestart.php' ?>
@@ -394,15 +393,18 @@ window.onload=function()
 
 	function choiceLng(element)
 	{
-		console.log(element.toElement.innerText);
 		var lng = element.toElement.innerText;
 		if (lng == "HTML") {
 			document.querySelector('form > #html').style.display = "block";
+			document.querySelector('#btn-html').className = "active";
 			document.querySelector('form > #css').style.display = "none";
+			document.querySelector('#btn-css').className = "";
 		}
 		if (lng == "CSS") {
 			document.querySelector('form > #css').style.display = "block";
+			document.querySelector('#btn-css').className = "active";
 			document.querySelector('form > #html').style.display = "none";
+			document.querySelector('#btn-html').className = "";
 		}
 	}
 
@@ -418,10 +420,8 @@ window.onload=function()
 			popup.setAttribute('style', 'display: none');
 		}, 300)
 		document.body.setAttribute('style', 'overflow:auto;')
+		document.getElementById('mfs').style.visibility = "hidden";
 	});
-
-
-
 
 
 	window.addEventListener('resize', function(){
@@ -432,13 +432,17 @@ window.onload=function()
 		console.log('WindowHeight: ',window.innerHeight)
 		*/
 		if (window.innerWidth > 992) {
-			document.querySelector('form > #html').style.display = "inline-block";
-			document.querySelector('form > #css').style.display = "inline-block";
+			document.getElementById('btn-choice').style.display = "none";
 		} else {
-			document.querySelector('form > #html').style.display = "none";
-			document.querySelector('form > #css').style.display = "block";
+			document.getElementById('btn-choice').style.display = "block";
 		}
 	}, true)
+
+	function afficheMessageForFullScreen(){
+		document.getElementById('mfs').style.visibility = "visible";
+	}
+
+	editor_css.on("focus", afficheMessageForFullScreen)
 
 }</script>
 
