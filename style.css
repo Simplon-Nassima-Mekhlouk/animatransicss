@@ -10,7 +10,7 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-
+  background-color: black;
 }
 .sidebar {
   margin-top: 79px;
@@ -38,6 +38,7 @@ body {
     width: 300px;
     color: white;
     height: 300px;
+    border-radius: 300px;
     animation-iteration-count: 1;
     transition: all 0.2s ease-in-out;
     animation-duration: 0.8s;
@@ -53,10 +54,6 @@ body {
     top: 300;
     left: 100;
     transition: all 0.2s ease-in-out;
-    -moz-box-shadow: -5px 5px 5px -2px rgb(0, 0, 0);
-    -webkit-box-shadow: -5px 5px 5px -2px rgb(0, 0, 0);
-    -o-box-shadow: -5px 5px 5px -2px rgb(0, 0, 0);
-    box-shadow: -5px 5px 5px -2px rgb(0, 0, 0);
     z-index: 1;
 }
 
@@ -96,10 +93,6 @@ body {
     animation-name: jump;
     margin-left: -10px;
     z-index: 1;
-    -moz-box-shadow: 5px -5px 5px -2px #656565;
-    -webkit-box-shadow: 5px -5px 5px -2px #656565;
-    -o-box-shadow: 5px -5px 5px -2px #656565;
-    box-shadow: 5px -5px 5px -2px #656565;
 }
 .transition h1 {
   margin-top: 45%;
@@ -155,18 +148,22 @@ body {
 }
 
 .ball {
-    width:3px;
-    height: 3px;
+    width:4px;
+    height: 4px;
     top: 0;
     animation-direction:alternate-reverse;
     border-radius: 6px;
-    animation-duration: 16s;
+    animation-duration: 30s;
     position: absolute;
     z-index: -102;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-
+    text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #ff00de , 0 0 70px #ff00de , 0 0 80px #ff00de , 0 0 100px #ff00de ;
+    -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
 }
 
 @media (max-width: 820px) {

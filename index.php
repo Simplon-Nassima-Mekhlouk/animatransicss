@@ -29,7 +29,7 @@ include 'head.php';
 var CreateBalls = {
 	pickColor: "",
 	obj:"",
-	color: ["red","green","yellow","blue","purple","grey","black","orange","pink"],
+	color: ["ffffff"],
 	addKeyframe: function() {
 	 var screenSize = window.innerWidth;
 	 var screenHeight = window.innerHeight;
@@ -89,7 +89,7 @@ var CreateBalls = {
 
 }
 
-for (var i = 0; i < 100; i++){
+for (var i = 0; i < 200; i++){
 CreateBalls.ball();
 
 };
