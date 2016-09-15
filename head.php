@@ -3,7 +3,6 @@
 	<title>Animation/Transition</title>
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Lato" rel="stylesheet">
 	<link rel="icon" class="fa fa-css3" aria-hidden="true" />
 	<?php
@@ -27,16 +26,42 @@
 </head>
 
 <body>
-
-	<header id="header">
-		<div id="active_menu">
-			<a href="#slideleft">
-				<span></span>
-				<span></span>
-				<span></span>
-			</a>
+	<div id="active_menu">
+		<a href="#slideleft">
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
 		</div>
-		<a href="http://localhost/animtransicss/">Animation & Transition Css</a>
+	<header id="header">
+			<div class="content_header">
+			<div class="logo"><img src="h1index.png"></div>
+			<div class="moon">
+			<div class="sun"></div>
+		</div>
+			<div class="clouds-wrapper">
+						<ul class="clouds1">
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+				<div class="clouds2-container">
+						<ul class="clouds2">
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+				</div>
+			 </div>
+		  <div class="content_mountains">
+		    <ul class="mountains">
+		      <li class="peak1"></li>
+		      <li class="peak2"></li>
+		      <li class="peak3"></li>
+					<li class="peak4"></li>
+		    </ul>
+		  </div>
+			</div>
 	</header>
 	<div class="sidebar"  id="slideleft">
 		<div class="leftbar">

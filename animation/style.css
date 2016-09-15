@@ -1,3 +1,64 @@
+.logo {
+    position: relative;
+    margin:auto;
+    text-align: center;
+}
+.mountains {
+  position: relative;
+  margin: auto;
+  width: 800px;
+  z-index: 3;
+
+}
+
+.mountains li {
+  float: left;
+}
+
+.peak1 {
+	border-left: 200px solid transparent;
+	border-right: 200px solid transparent;
+	border-bottom: 200px solid lightgrey;
+  animation-name: transimountains;
+  animation-duration: 2s;
+  animation-delay: 1s;
+}
+@keyframes transimountains {
+ from { transform: translateY(100px);
+ }
+ to {
+   transform: translateY(0px);
+ }
+
+}
+
+.peak2 {
+	border-left: 150px solid transparent;
+	border-right: 175px solid transparent;
+	border-bottom: 150px solid lightgrey;
+  margin-left: -200px;
+  margin-top: 50px;
+  animation-name: transimountains;
+  animation-duration: 2s;
+  animation-delay: 2s;
+}
+
+.peak3 {
+
+	border-left: 200px solid transparent;
+	border-right: 200px solid transparent;
+	border-bottom: 200px solid lightgrey;
+  margin-left: -250px;
+  animation-name: transimountains;
+  animation-duration: 2s;
+  animation-delay: 3s;
+}
+
+
+.logo img {
+    width: 25%;
+    height: auto;
+}
 .ctn-demo {
     margin-top: 80px
 }

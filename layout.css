@@ -65,46 +65,206 @@ body {
 
 header {
 	width: 100%;
-	padding: 15px;
-	position: fixed;
-	background: #ffffff;
+	position: relative;
+  background-color: white;
 	top: 0;
+  float: left;
 	z-index: 10;
-	-moz-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.4);
-  -webkit-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.4);
-  -o-box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.4);
-  box-shadow: 0px 5px 5px 0px rgba(77, 77, 77, 0.4);
-  filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=180, Strength=5);
-  animation-name: slidemove;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-out;
-  animation-duration: 0.8s;
+  overflow: hidden;
 }
-@keyframes slidemove {
-	0% {
-			transform: translateX(-800px);
-	}
-	100% {
-			transform: translateX(0);
-	}
+.logo {
+    position: relative;
+    margin:auto;
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+  @keyframes circle {
+      from
+      {
+        transform:translate(100px,100px);
+        opacity: 0;
+      }
+      to
+      {
+        transform:translate(-2px,-2px);
+        opacity: 1;
+      }
+  }
+  .sun {
+    animation-name: shadow;
+    animation-name: circle;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+  background: #9098A1;
+  border-radius: 50%;
+  height: 100px;
+  margin: 0 auto;
+  width: 100px;
+  box-shadow: -moz-box-shadow: inset -10px 1px 5px 0px #656565;
+-webkit-box-shadow: inset -10px 1px 5px 0px #656565;
+-o-box-shadow: inset -10px 1px 5px 0px #656565;
+box-shadow: inset -10px 1px 5px 0px #656565;
+filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=185, Strength=5);
+-moz-border-radius: 100px;
+-webkit-border-radius: 100px;
+border-radius: 100px;
+z-index: 11;
+
 }
 
- header #active_menu a{
+  header .clouds-wrapper {
+    position: absolute;
+    left: 100px;
+    opacity: .99;
+    margin: auto;
+    width: 100%;
+    z-index: 1; }
+    header .clouds-wrapper ul {
+      position: relative;
+      list-style-type: none; }
+      header .clouds-wrapper ul li {
+        position: absolute;
+        background: lightgrey; }
+        header .clouds-wrapper ul li:nth-child(1) {
+          border-radius: 30px;
+          height: 50px;
+          width: 150px; }
+        header .clouds-wrapper ul li:nth-child(2) {
+          border-radius: 50%;
+          height: 80px;
+          margin-top: -40px;
+          margin-left: 23px;
+          width: 80px; }
+        header .clouds-wrapper ul li:nth-child(3) {
+          border-radius: 50%;
+          height: 50px;
+          margin-top: -25px;
+          margin-left: 80px;
+          width: 50px; }
+    header .clouds-wrapper .clouds1 {
+      animation: slideOver 12s infinite Alternate-reverse both;
+      -webkit-animation: slideOver 12s infinite Alternate-reverse both; }
+    header .clouds-wrapper .clouds2-container {
+      transform: scale(0.75);
+      -webkit-transform: scale(0.75); }
+    header .clouds-wrapper .clouds2 {
+      animation: slideOver 7s .5s infinite Alternate-reverse both;
+      -webkit-animation: slideOver 7s .5s infinite Alternate-reverse both; }
+    header .clouds-wrapper .clouds3-container {
+      transform: scale(0.7);
+      -webkit-transform: scale(0.7); }
+@keyframes slideOver {
+  0% {
+    transform: translateX(200px);
+    -webkit-transform: translateX(200px);
+    opacity: 0; }
+  20% {
+    opacity: 1; }
+  90% {
+    opacity: 1; }
+  100% {
+    transform: translateX(900px);
+    -webkit-transform: translateX(900px);
+    opacity: 0; } }
+.content_mountains  {
+  text-align: center;
+  margin: auto;
+  margin-left: 10vw;
+  z-index: 12;
+}
+.content_header {
+  width: 100%;
+  margin: auto;
+}
+
+.mountains {
+  margin: auto;
+  width: 800px;
+  z-index: 13;
+}
+
+.mountains li {
+  float: left;
+  list-style: none;
+  z-index: 13;
+
+}
+
+.peak1 {
+	border-left: 200px solid transparent;
+	border-right: 200px solid transparent;
+	border-bottom: 200px solid #4682B4;
+  animation-name: transimountains;
+  animation-duration: 1s;
+}
+@keyframes transimountains {
+ from { transform: translateY(300px);
+   visibility: hidden;
+ }
+ to {
+   transform: translateY(0px);
+   visibility: visible;
+ }
+}
+
+.peak2 {
+	border-left: 150px solid transparent;
+	border-right: 175px solid transparent;
+	border-bottom: 150px solid #4682B4;
+  margin-left: -200px;
+  margin-top: 50px;
+  animation-name: transimountains;
+  animation-duration: 2s;
+}
+
+.peak3 {
+	border-left: 200px solid transparent;
+	border-right: 200px solid transparent;
+	border-bottom: 200px solid #4682B4;
+  margin-left: -250px;
+  animation-name: transimountains;
+  animation-duration: 2s;
+}
+
+.peak4 {
+	border-left: 150px solid transparent;
+	border-right: 175px solid transparent;
+	border-bottom: 150px solid #4682B4;
+  margin-left: -100px;
+  margin-top: -150px;
+  animation-name: transimountains;
+  animation-duration: 3s;
+
+}
+
+.logo img {
+    width: 40%;
+    height: auto;
+}
+
+  #active_menu a{
 	display: inline-block;
 	width: 45px;
-	margin-left: 15px;
 	cursor: pointer;
 	padding: 10px;
 	transition: all 0.6s ease-in-out;
 	vertical-align: sub;
+  z-index: 20;
+
 }
 
-header #active_menu {
+ #active_menu {
 		display: inline-block;
 		vertical-align: middle;
+    position: fixed;
+    z-index: 20;
+    margin: 10px;
+    border: 2px solid #878785;
+
 }
 
-header #active_menu span  {
+ #active_menu span  {
 	display: block;
 	background: rgb(77, 77, 77);
 	width: 100%;
@@ -113,32 +273,6 @@ header #active_menu span  {
 }
 
 
-header > a {
-	display: inline-block;
-	font-size: 2em;
-	text-decoration: none;
-	margin-left: 25px;
-	color: rgb(77, 77, 77);
-	font-weight: lighter;
-	padding-left: 20px;
-	border-left: 2px solid rgb(77, 77, 77);
-	vertical-align: middle;
-}
-
-.overlay {
-  position: fixed;
-  top: 150px;
-  bottom: auto;
-  left: 10%;
-  right: 10%;
-  transition: opacity 500ms;
-  visibility: hidden;
-  opacity: 0;
-}
-.overlay:target {
-  visibility: visible;
-  opacity: 1;
-}
 
 .menubutton1:hover {
 	background-color: rgb(234, 67, 53);
@@ -166,7 +300,7 @@ header > a {
 }
 
 .sidebar {
-	z-index: 6;
+	z-index: 12;
 	position: fixed;
 	width: 340px;
 	height: 100%;
@@ -184,12 +318,6 @@ header > a {
 	background-color: rgb(233, 20, 30);
 	margin-left: -10px;
 	z-index: -2;
-  -moz-box-shadow: 10px 0px 8px -8px rgba(77, 77, 77, 0.5);
-	-webkit-box-shadow: 10px 0px 8px -8px rgba(77, 77, 77, 0.5);
-	-o-box-shadow: 10px 0px 8px -8px rgba(77, 77, 77, 0.5);
-	box-shadow: 10px 0px 8px -8px rgba(77, 77, 77, 0.5);
-	filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=90, Strength=5);
-
 }
 .leftbarmenuclose h6 {
 	color: white;
@@ -201,14 +329,9 @@ header > a {
 }
 
 .leftbar {
-	background-color: white;
-	-moz-box-shadow: 10px 0px 8px -8px rgba(77, 77, 77, 0.5);
-	-webkit-box-shadow: 10px 0px 8px -8px rgba(77, 77, 77, 0.5);
-	-o-box-shadow: 10px 0px 8px -8px rgba(77, 77, 77, 0.5);
-	box-shadow: 10px 0px 8px -8px rgba(77, 77, 77, 0.5);
-	filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=90, Strength=5);
+	background-color: #E9E7E8;
 	width: 300px;
-	z-index: 1;
+	z-index: 10;
 	position: relative;
 }
 
@@ -312,8 +435,6 @@ margin-left: 0px;
 
 .page {
 	margin: auto;
-	margin-top: 79px;
-	padding: 0px 0px;
 }
 
 

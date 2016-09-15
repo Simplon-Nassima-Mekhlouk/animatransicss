@@ -14,8 +14,6 @@ include'../head.php';
   <div class="container ctn-demo">
     <div class="row">
       <div class="col-md-12 text-center">
-        <h1>Animations CSS 3</h1>
-        <h2>Survolez les éléments pour visualiser les effets,<br>cliquez sur les titres pour découvrir le code</h2>
         <div class="colored-line"></div>
         <div class="row ctn-demo">
 
@@ -183,6 +181,7 @@ include'../head.php';
     </div>
   </div>
 
-</div> <!-- END PAGE -->
+</div>
+</div><!-- END PAGE -->
 
 <?php include'../footer.php'; ?>

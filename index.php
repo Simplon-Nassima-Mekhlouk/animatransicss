@@ -5,23 +5,55 @@ include 'head.php';
 </div> <!-- END SIDEBAR -->
 
 <div class="page">
-
-
+<div class="pageanimtransitransfo">
+<div class="cercle">
 	<a href="animation/">
 		<div class="animation">
 			<h1>Animation</h1>
 		</div>
 	</a>
+	</div>
+	<div class="cercle">
 	<a href="transition/">
 		<div class="transition">
 			<h1>Transition</h1>
 		</div>
 	</a>
-
-
-</div> <!-- END PAGE -->
- <div id="balles">
 </div>
+	<div class="cercle">
+	<a href="transformation/">
+		<div class="transformation">
+			<h1>Transformation</h1>
+		</div>
+	</a>
+	</div>
+</div>
+<div class="grandediv">
+<div class="pagevivezlexperience">
+	<div class="atelier">
+		<div class="title">Commencez l'expérience</div>
+		<a href="#">PLAY</a>
+	<div id="balles">
+ </div>
+ </div>
+</div>
+<div class="deuxpetitesdiv">
+<div class="tutolink">
+<a href="#">
+<div class="tuto">
+	<h2>Tutoriel</h2>
+</div>
+</a>
+</div>
+<div class="referencediv">
+	<h2>References</h2>
+</div>
+</div>
+</div>
+</div> <!-- END PAGE -->
+
+
+
 <style id="newstylecss">
 
 </style>
@@ -31,40 +63,56 @@ var CreateBalls = {
 	obj:"",
 	color: ["ffffff"],
 	addKeyframe: function() {
-	 var screenSize = window.innerWidth;
+	 var size;
+	 var screenSize = (window.innerWidth /100)* 60;
 	 var screenHeight = window.innerHeight;
+	 console.log(screenHeight);
+	 var randomSize = function() {
+		 size = Math.floor((Math.random()* 20) + 4);
+		 return size;
+	 }
 	 var randomHeight = function() {
-		 return Math.floor(Math.random()* screenHeight);
+		 return -Math.floor(Math.random()* 200;
 	 };
 	 var randomTranslate = function() {
 		 return Math.floor(Math.random()* screenSize);
 	 };
 	 var randomAnimDuration = function() {
-		 return Math.floor(Math.random()* 10000)
+		 return Math.floor(Math.random()* 5000)
 	 }; // var pour appliqué une durée aléatoirement. || animation-duration:" + randomAnimDuration() +"ms;"+ "\n\
 	 var styleDiv = document.querySelector("#newstylecss");
 	 var ballcss = "#ball" + i + "{\n\
 		animation-name: animball" + i + ";" + "\n\
+		opacity:" + Math.random() + ";" + "\n\
+		width:" + randomSize() + "px" + ";" + "\n\
+		height:" + size + "px" + ";" + "\n\
+		border-radius:" + 100 + "px" + ";" + "\n\
 		animation-delay:" + randomAnimDuration() +"ms;"+ "\n\
 	 }\n\
 	 @keyframes animball" + i + " {\n\
 		 0% {\n\
 				 transform: translate(" + randomTranslate() + "px, " + randomHeight() + "px);\n\
+				 z-index:" + "1;" + "\n\
 		 }\n\
 		 20% {\n\
 				 transform: translate(" + randomTranslate() + "px, " + randomHeight() + "px);\n\
+				 z-index:" + "1;" + "\n\
 		 }\n\
 		 40% {\n\
 				 transform: translate(" + randomTranslate() + "px, " + randomHeight() + "px);\n\
+				 z-index:" + "1;" + "\n\
 		 }\n\
 		 60% {\n\
 				 transform: translate(" + randomTranslate() + "px, " + randomHeight() + "px);\n\
+				 z-index:" + "1;" + "\n\
 		 }\n\
 		 80% {\n\
 				 transform: translate(" + randomTranslate() + "px, " + randomHeight() + "px);\n\
+				 z-index:" + "1;" + "\n\
 		 }\n\
 		 100% {\n\
 				 transform: translate(" + randomTranslate() + "px, " + randomHeight() + "px);\n\
+				 z-index:" + "1;" + "\n\
 		 }\n\
 	 }\n\
 	 ";
@@ -89,7 +137,7 @@ var CreateBalls = {
 
 }
 
-for (var i = 0; i < 200; i++){
+for (var i = 0; i < 30; i++){
 CreateBalls.ball();
 
 };

@@ -9,62 +9,80 @@ code[class*="language-"], pre[class*="language-"] {
 body {
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  background-color: black;
 }
 .sidebar {
   margin-top: 79px;
 
+}
+.clouds-wrapper, .content_mountains, .moon {
+  display: none;
 }
 
 .page {
     position: relative;
     display: inline-block;
     width: 100%;
-    margin-top: 20vh;
     text-align: center;
 }
-.page a {
-    display: inline-block;
-    position: relative;
-    vertical-align: top;
+
+.pageanimtransitransfo {
+  width: 100%;
+  background-color: rgba(128, 128, 128,0.2);
+  padding: 50px;
+  animation-name: jump;
+  animation-duration: 3s;
+  z-index: 10;
 }
 
-.page .animation, .page .transition {
-    display: inline-block;
+
+.page .animation, .page .transition, .page .transformation {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    width: 300px;
+    width: 250px;
     color: white;
-    height: 300px;
-    border-radius: 300px;
-    animation-iteration-count: 1;
-    transition: all 0.2s ease-in-out;
-    animation-duration: 0.8s;
+    height: 250px;
+    border-radius: 250px;
 
 }
-
-.page .animation {
-    margin-top: 10px;
-    background-color: #E1141B;
+.page .transition, .page .transformation {
+margin-left: 200px;
+}
+.page .animation, .page .transition, .page .transformation {
+    background-color: orangered;
     color: white;
-    animation-name: drop;
     position: relative;
-    top: 300;
-    left: 100;
     transition: all 0.2s ease-in-out;
     z-index: 1;
 }
+.tutolink {
+  width: 60%;
+  display: inline-block;
+  float: left;
+}
+.tuto {
+  text-align:center;
+  background-color: #129D86;
+  height: 300px;
 
-.page .animation:before {
+}
+.deuxpetitesdiv {
+}
+.tuto h2 {
+  line-height: 233.69px;
+  color: white;
+  font-size: 2em;
+  margin: 0;
+}
+
+.page .animation:before, .page .transition:before, .page .transformation:before {
     content: "";
     position: absolute;
     width: 40%;
     height: 4px;
-    bottom: 60%;
+    bottom: 40%;
     left: 30%;
-    background-color: #00F076;
+    background-color: white;
     visibility: hidden;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
@@ -72,101 +90,98 @@ body {
     transition: all 0.3s ease-in-out 0s;
 }
 
-.page .animation:hover:before {
+.page .animation:hover:before, .page .transition:hover:before, .page .transformation:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
 
-.page .animation:hover {
-    color: #00F076;
+.page .animation:hover, .page .transition:hover, .page .transformation:hover  {
     z-index: 2;
-    position: relative;
-    transition: all 0.2s ease-in-out;
 }
 
-.page .transition {
-    background-color: #00F076;
-    color: white;
-    position: relative;
-    transition: all 0.2s ease-in-out;
-    animation-name: jump;
-    margin-left: -10px;
-    z-index: 1;
-}
-.transition h1 {
-  margin-top: 45%;
+.transition h1, .transformation h1, .animation h1 {
   text-shadow: 1px 1px grey;
-}
-.animation h1 {
-  margin-top: 45%;
-  text-shadow: 1px 1px grey;
-
-}
-.page .transition:before {
-    content: "";
-    position: absolute;
-    width: 40%;
-    height: 4px;
-    bottom: 50%;
-    left: 30.5%;
-    background-color: #E1141B;
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
-}
-
-.page .transition:hover:before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-}
-
-.page .transition:hover {
-    color: #E1141B;
-      z-index: 2;
-}
-
-@keyframes drop {
-    0% {
-        transform: translateY(-800px);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-
-@keyframes jump {
-    0% {
-        transform: translateY(800px);
-    }
-    100% {
-        transform: translateY(0px);
-    }
+  font-size: 1.6em;
+  line-height: 250px;
+  margin: 0;
+  padding: 0;
 }
 
 .ball {
-    width:4px;
-    height: 4px;
-    top: 0;
     animation-direction:alternate-reverse;
     border-radius: 6px;
-    animation-duration: 30s;
+    animation-duration: 40s;
     position: absolute;
-    z-index: -102;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #ff00de , 0 0 70px #ff00de , 0 0 80px #ff00de , 0 0 100px #ff00de ;
-    -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-    -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-    -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-    transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    z-index: -1;
+}
+.cercle {
+  display: inline-block;
+}
+#balles {
+  overflow: hidden;
+}
+.pagevivezlexperience {
+  width: 40%;
+  height:600px;
+  background-color: rgb(0, 139, 139);
+  animation-name: jump;
+  animation-duration: 4s;
+  display: inline-block;
+  float: left;
+}
+.atelier {
+  margin: auto;
+  margin-top: 20vh;
+}
+ .atelier .title {
+      margin: auto;
+      display: block;
+      color: white;
+      font-size: 2em;
+      text-transform: uppercase;
+      margin-bottom: 2%;
+      padding: 5% 0% 0% 0%;
+      z-index: 1;
+    }
+.pagevivezlexperience .atelier a {
+  margin: auto;
+  display: block;
+  background-color: none;
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 3px;
+  color: white;
+  width: 200px;
+  text-align: center;
+  transition: all 0.3s linear;
+  z-index: 1;
+}
+.atelier a:hover {
+  background-color: white;
+  color: darkcyan;
+  width: 300px;
+}
+.referencediv {
+  display: inline-block;
+  float: left;
+  color: white;
+  height: 300px;
+  width: 60%;
+  background-color: orangered;
+}
+.referencediv h2 {
+  padding: 0;
+  margin: 0;
+  font-size: 2em;
+  line-height: 235.8px;
 }
 
-@media (max-width: 820px) {
+/*@media (max-width: 820px) {
 	.page .animation, .page .transition {
 		width: 300px;
 		height: 300px;
@@ -221,4 +236,4 @@ body {
       margin-top: 40%;
 
     }
-}
+}*/
